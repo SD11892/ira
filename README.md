@@ -13,7 +13,7 @@ IRA Design helps you scale your final illustrations and bring them to life. Down
 
 ## Links:
 
-+ [Live Preview](https://www.creative-tim.com/ira-design)
++ [Live Preview](http://iradesign.io/)
 
 ## Download:
 
