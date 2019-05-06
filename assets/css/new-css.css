@@ -474,6 +474,14 @@ body > .navbar-collapse .navbar-nav li a:hover{
     .section-how .space-180{
       height: 0;
     }
+
+    .navbar-brand{
+      width: 150px;
+    }
+
+    .navbar-brand img{
+      width: 100% !important;
+    }
 }
 
 @media (max-width:767px){
