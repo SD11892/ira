@@ -179,7 +179,7 @@ a[rel="tooltip"]{
   margin-left: 20px;
 }
 
-.navbar .dropdown-menu > li > a{
+.navbar .dropdown-menu > a{
   margin: 5px;
   border-radius: 6px;
 }
@@ -188,10 +188,34 @@ a[rel="tooltip"]{
   margin-right: 35px;
 }
 
-.navbar .dropdown-menu > li > a:hover,
-.navbar .dropdown-menu > li > a:focus{
+.navbar .dropdown-menu > a:hover,
+.navbar .dropdown-menu > a:focus{
   background: #91a5f8;
   color: #fff;
+}
+
+.navbar .dropdown-menu::before{
+  border-bottom: 11px solid rgba(0, 0, 0, 0.2);
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: auto;
+    right: 12px;
+    top:-11px;
+}
+
+.navbar .dropdown-menu::after{
+  border-bottom: 11px solid #FFFFFF;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: auto;
+    right: 12px;
+    top:-11px;
 }
 
 .navbar .btn.btn-fill:hover,
@@ -498,9 +522,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
     display: block;
   }
 
-  .navbar-collapse.collapsing{
-    transition: none;
-  }
 }
 
 @media (max-width:767px){
@@ -560,12 +581,12 @@ body > .navbar-collapse .navbar-nav li a:hover{
       text-align: center;
     }
 
-    .navbar .collapsing{
+    nav .btn{
       display: none;
     }
 
-    .nav .btn{
-      display: none;
+    .navbar-toggler:focus{
+      outline: none;
     }
 
     .navbar-toggler .icon-bar{
@@ -971,6 +992,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   border-color: #fc5f3c;
 }
 
+.btn-instagram{
+  color:#233463 !important;
+}
+
 .text-white{
   color: white !important;
 }
@@ -1014,6 +1039,21 @@ body > .navbar-collapse .navbar-nav li a:hover{
 .dropdown-menu > li > a:focus{
   background-color: transparent;
   opacity: 1;
+}
+.dropdown-menu.show{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+  opacity: 1;
+  filter: alpha(opacity=1);
+  visibility: visible;
 }
 .navbar{
   border: none;
