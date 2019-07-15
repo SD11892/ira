@@ -39,3 +39,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - feed.xml
+  
