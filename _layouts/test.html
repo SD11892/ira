@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-6">
       <!-- Import SVG -->
-      {% include examples/old-svg/svg16.html %}
+      {% include examples/old-svg/svg24.html %}
     </div>
     <div class="col-6">
       <button class="btn" onclick="transform()">Transform</button>
@@ -31,493 +31,110 @@
   // Variabilele in format JSON
   const values = {
     "st0":"fill:#F8F8FF",
-    "st1":"fill:#F5F5FC",
-    "st2":"fill:#E9EDFA",
-    "st3":"fill:#BAC6F2",
-    "st4":"fill:#B1C1F2",
-    "st5":"fill:url(#SVGID_1_)",
-    "st6":"fill:url(#SVGID_2_)",
-    "st7":"fill:url(#SVGID_3_)",
-    "st8":"fill:url(#SVGID_4_)",
-    "st9":"fill:url(#SVGID_5_)",
-    "st10":"fill:url(#SVGID_6_)",
-    "st11":"fill:url(#SVGID_7_)",
-    "st12":"fill:url(#SVGID_8_)",
-    "st13":"fill:url(#SVGID_9_)",
-    "st14":"fill:url(#SVGID_10_)",
-    "st15":"fill:url(#SVGID_11_)",
-    "st16":"fill:url(#SVGID_12_)",
-    "st17":"fill:url(#SVGID_13_)",
-    "st18":"fill:url(#SVGID_14_)",
-    "st19":"fill:url(#SVGID_15_)",
-    "st20":"fill:url(#SVGID_16_)",
-    "st21":"fill:url(#SVGID_17_)",
-    "st22":"fill:url(#SVGID_18_)",
-    "st23":"fill:url(#SVGID_19_)",
-    "st24":"fill:url(#SVGID_20_)",
-    "st25":"fill:url(#SVGID_21_)",
-    "st26":"fill:url(#SVGID_22_)",
-    "st27":"fill:url(#SVGID_23_)",
-    "st28":"fill:url(#SVGID_24_)",
-    "st29":"fill:url(#SVGID_25_)",
-    "st30":"fill:url(#SVGID_26_)",
-    "st31":"fill:url(#SVGID_27_)",
-    "st32":"fill:url(#SVGID_28_)",
-    "st33":"fill:url(#SVGID_29_)",
-    "st34":"fill:url(#SVGID_30_)",
-    "st35":"fill:url(#SVGID_31_)",
-    "st36":"fill:url(#SVGID_32_)",
-    "st37":"fill:url(#SVGID_33_)",
-    "st38":"fill:url(#SVGID_34_)",
-    "st39":"fill:url(#SVGID_35_)",
-    "st40":"fill:url(#SVGID_36_)",
-    "st41":"fill:url(#SVGID_37_)",
-    "st42":"fill:url(#SVGID_38_)",
-    "st43":"fill:url(#SVGID_39_)",
-    "st44":"fill:url(#SVGID_40_)",
-    "st45":"fill:url(#SVGID_41_)",
-    "st46":"fill:url(#SVGID_42_)",
-    "st47":"fill:url(#SVGID_43_)",
-    "st48":"fill:url(#SVGID_44_)",
-    "st49":"fill:url(#SVGID_45_)",
-    "st50":"fill:url(#SVGID_46_)",
-    "st51":"fill:url(#SVGID_47_)",
-    "st52":"fill:url(#SVGID_48_)",
-    "st53":"fill:url(#SVGID_49_)",
-    "st54":"fill:url(#SVGID_50_)",
-    "st55":"fill:url(#SVGID_51_)",
-    "st56":"fill:url(#SVGID_52_)",
-    "st57":"fill:url(#SVGID_53_)",
-    "st58":"fill:url(#SVGID_54_)",
-    "st59":"fill:url(#SVGID_55_)",
-    "st60":"fill:url(#SVGID_56_)",
-    "st61":"fill:url(#SVGID_57_)",
-    "st62":"fill:url(#SVGID_58_)",
-    "st63":"fill:url(#SVGID_59_)",
-    "st64":"fill:url(#SVGID_60_)",
-    "st65":"fill:url(#SVGID_61_)",
-    "st66":"fill:url(#SVGID_62_)",
-    "st67":"fill:url(#SVGID_63_)",
-    "st68":"fill:url(#SVGID_64_)",
-    "st69":"fill:url(#SVGID_65_)",
-    "st70":"fill:url(#SVGID_66_)",
-    "st71":"fill:url(#SVGID_67_)",
-    "st72":"fill:url(#SVGID_68_)",
-    "st73":"fill:url(#SVGID_69_)",
-    "st74":"fill:url(#SVGID_70_)",
-    "st75":"fill:url(#SVGID_71_)",
-    "st76":"fill:url(#SVGID_72_)",
-    "st77":"fill:url(#SVGID_73_)",
-    "st78":"fill:url(#SVGID_74_)",
-    "st79":"fill:url(#SVGID_75_)",
-    "st80":"fill:url(#SVGID_76_)",
-    "st81":"fill:url(#SVGID_77_)",
-    "st82":"fill:url(#SVGID_78_)",
-    "st83":"fill:url(#SVGID_79_)",
-    "st84":"fill:url(#SVGID_80_)",
-    "st85":"fill:url(#SVGID_81_)",
-    "st86":"fill:url(#SVGID_82_)",
-    "st87":"fill:url(#SVGID_83_)",
-    "st88":"fill:url(#SVGID_84_)",
-    "st89":"fill:url(#SVGID_85_)",
-    "st90":"fill:url(#SVGID_86_)",
-    "st91":"fill:url(#SVGID_87_)",
-    "st92":"fill:url(#SVGID_88_)",
-    "st93":"fill:url(#SVGID_89_)",
-    "st94":"fill:url(#SVGID_90_)",
-    "st95":"fill:url(#SVGID_91_)",
-    "st96":"fill:url(#SVGID_92_)",
-    "st97":"fill:url(#SVGID_93_)",
-    "st98":"fill:url(#SVGID_94_)",
-    "st99":"fill:url(#SVGID_95_)",
-    "st100":"fill:url(#SVGID_96_)",
-    "st101":"fill:url(#SVGID_97_)",
-    "st102":"fill:url(#SVGID_98_)",
-    "st103":"fill:url(#SVGID_99_)",
-    "st104":"fill:url(#SVGID_100_)",
-    "st105":"fill:url(#SVGID_101_)",
-    "st106":"fill:url(#SVGID_102_)",
-    "st107":"fill:url(#SVGID_103_)",
-    "st108":"fill:url(#SVGID_104_)",
-    "st109":"fill:url(#SVGID_105_)",
-    "st110":"fill:url(#SVGID_106_)",
-    "st111":"fill:url(#SVGID_107_)",
-    "st112":"fill:url(#SVGID_108_)",
-    "st113":"fill:url(#SVGID_109_)",
-    "st114":"fill:url(#SVGID_110_)",
-    "st115":"fill:url(#SVGID_111_)",
-    "st116":"fill:url(#SVGID_112_)",
-    "st117":"fill:url(#SVGID_113_)",
-    "st118":"fill:url(#SVGID_114_)",
-    "st119":"fill:url(#SVGID_115_)",
-    "st120":"fill:url(#SVGID_116_)",
-    "st121":"fill:url(#SVGID_117_)",
-    "st122":"fill:url(#SVGID_118_)",
-    "st123":"fill:url(#SVGID_119_)",
-    "st124":"fill:url(#SVGID_120_)",
-    "st125":"fill:url(#SVGID_121_)",
-    "st126":"fill:url(#SVGID_122_)",
-    "st127":"fill:url(#SVGID_123_)",
-    "st128":"fill:url(#SVGID_124_)",
-    "st129":"fill:url(#SVGID_125_)",
-    "st130":"fill:url(#SVGID_126_)",
-    "st131":"fill:url(#SVGID_127_)",
-    "st132":"fill:url(#SVGID_128_)",
-    "st133":"fill:url(#SVGID_129_)",
-    "st134":"fill:url(#SVGID_130_)",
-    "st135":"fill:url(#SVGID_131_)",
-    "st136":"fill:url(#SVGID_132_)",
-    "st137":"fill:url(#SVGID_133_)",
-    "st138":"fill:url(#SVGID_134_)",
-    "st139":"fill:url(#SVGID_135_)",
-    "st140":"fill:url(#SVGID_136_)",
-    "st141":"fill:url(#SVGID_137_)",
-    "st142":"fill:url(#SVGID_138_)",
-    "st143":"fill:url(#SVGID_139_)",
-    "st144":"fill:url(#SVGID_140_)",
-    "st145":"fill:url(#SVGID_141_)",
-    "st146":"fill:url(#SVGID_142_)",
-    "st147":"fill:url(#SVGID_143_)",
-    "st148":"fill:url(#SVGID_144_)",
-    "st149":"fill:url(#SVGID_145_)",
-    "st150":"fill:url(#SVGID_146_)",
-    "st151":"fill:url(#SVGID_147_)",
-    "st152":"fill:url(#SVGID_148_)",
-    "st153":"fill:url(#SVGID_149_)",
-    "st154":"fill:url(#SVGID_150_)",
-    "st155":"fill:url(#SVGID_151_)",
-    "st156":"fill:url(#SVGID_152_)",
-    "st157":"fill:url(#SVGID_153_)",
-    "st158":"fill:url(#SVGID_154_)",
-    "st159":"fill:url(#SVGID_155_)",
-    "st160":"fill:url(#SVGID_156_)",
-    "st161":"fill:url(#SVGID_157_)",
-    "st162":"fill:url(#SVGID_158_)",
-    "st163":"fill:url(#SVGID_159_)",
-    "st164":"fill:url(#SVGID_160_)",
-    "st165":"fill:url(#SVGID_161_)",
-    "st166":"fill:url(#SVGID_162_)",
-    "st167":"fill:url(#SVGID_163_)",
-    "st168":"fill:url(#SVGID_164_)",
-    "st169":"fill:url(#SVGID_165_)",
-    "st170":"fill:url(#SVGID_166_)",
-    "st171":"fill:url(#SVGID_167_)",
-    "st172":"fill:url(#SVGID_168_)",
-    "st173":"fill:url(#SVGID_169_)",
-    "st174":"fill:url(#SVGID_170_)",
-    "st175":"fill:url(#SVGID_171_)",
-    "st176":"fill:url(#SVGID_172_)",
-    "st177":"fill:url(#SVGID_173_)",
-    "st178":"fill:url(#SVGID_174_)",
-    "st179":"fill:url(#SVGID_175_)",
-    "st180":"fill:url(#SVGID_176_)",
-    "st181":"fill:url(#SVGID_177_)",
-    "st182":"fill:url(#SVGID_178_)",
-    "st183":"fill:url(#SVGID_179_)",
-    "st184":"fill:url(#SVGID_180_)",
-    "st185":"fill:url(#SVGID_181_)",
-    "st186":"fill:url(#SVGID_182_)",
-    "st187":"fill:url(#SVGID_183_)",
-    "st188":"fill:url(#SVGID_184_)",
-    "st189":"fill:url(#SVGID_185_)",
-    "st190":"fill:url(#SVGID_186_)",
-    "st191":"fill:url(#SVGID_187_)",
-    "st192":"fill:url(#SVGID_188_)",
-    "st193":"fill:url(#SVGID_189_)",
-    "st194":"fill:url(#SVGID_190_)",
-    "st195":"fill:url(#SVGID_191_)",
-    "st196":"fill:url(#SVGID_192_)",
-    "st197":"fill:url(#SVGID_193_)",
-    "st198":"fill:url(#SVGID_194_)",
-    "st199":"fill:url(#SVGID_195_)",
-    "st200":"fill:url(#SVGID_196_)",
-    "st201":"fill:url(#SVGID_197_)",
-    "st202":"fill:url(#SVGID_198_)",
-    "st203":"fill:url(#SVGID_199_)",
-    "st204":"fill:url(#SVGID_200_)",
-    "st205":"fill:url(#SVGID_201_)",
-    "st206":"fill:url(#SVGID_202_)",
-    "st207":"fill:url(#SVGID_203_)",
-    "st208":"fill:url(#SVGID_204_)",
-    "st209":"fill:url(#SVGID_205_)",
-    "st210":"fill:url(#SVGID_206_)",
-    "st211":"fill:url(#SVGID_207_)",
-    "st212":"fill:url(#SVGID_208_)",
-    "st213":"fill:url(#SVGID_209_)",
-    "st214":"fill:url(#SVGID_210_)",
-    "st215":"fill:url(#SVGID_211_)",
-    "st216":"fill:url(#SVGID_212_)",
-    "st217":"fill:url(#SVGID_213_)",
-    "st218":"fill:url(#SVGID_214_)",
-    "st219":"fill:url(#SVGID_215_)",
-    "st220":"fill:url(#SVGID_216_)",
-    "st221":"fill:url(#SVGID_217_)",
-    "st222":"fill:url(#SVGID_218_)",
-    "st223":"fill:url(#SVGID_219_)",
-    "st224":"fill:url(#SVGID_220_)",
-    "st225":"fill:url(#SVGID_221_)",
-    "st226":"fill:url(#SVGID_222_)",
-    "st227":"fill:url(#SVGID_223_)",
-    "st228":"fill:url(#SVGID_224_)",
-    "st229":"fill:url(#SVGID_225_)",
-    "st230":"fill:url(#SVGID_226_)",
-    "st231":"fill:url(#SVGID_227_)",
-    "st232":"fill:url(#SVGID_228_)",
-    "st233":"fill:url(#SVGID_229_)",
-    "st234":"fill:url(#SVGID_230_)",
-    "st235":"fill:url(#SVGID_231_)",
-    "st236":"fill:url(#SVGID_232_)",
-    "st237":"fill:url(#SVGID_233_)",
-    "st238":"fill:url(#SVGID_234_)",
-    "st239":"fill:url(#SVGID_235_)",
-    "st240":"fill:url(#SVGID_236_)",
-    "st241":"fill:url(#SVGID_237_)",
-    "st242":"fill:url(#SVGID_238_)",
-    "st243":"fill:url(#SVGID_239_)",
-    "st244":"fill:url(#SVGID_240_)",
-    "st245":"fill:url(#SVGID_241_)",
-    "st246":"fill:url(#SVGID_242_)",
-    "st247":"fill:url(#SVGID_243_)",
-    "st248":"fill:url(#SVGID_244_)",
-    "st249":"fill:url(#SVGID_245_)",
-    "st250":"fill:url(#SVGID_246_)",
-    "st251":"fill:url(#SVGID_247_)",
-    "st252":"fill:url(#SVGID_248_)",
-    "st253":"fill:url(#SVGID_249_)",
-    "st254":"fill:url(#SVGID_250_)",
-    "st255":"fill:url(#SVGID_251_)",
-    "st256":"fill:url(#SVGID_252_)",
-    "st257":"fill:url(#SVGID_253_)",
-    "st258":"fill:url(#SVGID_254_)",
-    "st259":"fill:url(#SVGID_255_)",
-    "st260":"fill:url(#SVGID_256_)",
-    "st261":"fill:url(#SVGID_257_)",
-    "st262":"fill:url(#SVGID_258_)",
-    "st263":"fill:url(#SVGID_259_)",
-    "st264":"fill:url(#SVGID_260_)",
-    "st265":"fill:url(#SVGID_261_)",
-    "st266":"fill:url(#SVGID_262_)",
-    "st267":"fill:url(#SVGID_263_)",
-    "st268":"fill:url(#SVGID_264_)",
-    "st269":"fill:url(#SVGID_265_)",
-    "st270":"fill:url(#SVGID_266_)",
-    "st271":"fill:url(#SVGID_267_)",
-    "st272":"fill:url(#SVGID_268_)",
-    "st273":"fill:url(#SVGID_269_)",
-    "st274":"fill:url(#SVGID_270_)",
-    "st275":"fill:url(#SVGID_271_)",
-    "st276":"fill:url(#SVGID_272_)",
-    "st277":"fill:url(#SVGID_273_)",
-    "st278":"fill:url(#SVGID_274_)",
-    "st279":"fill:url(#SVGID_275_)",
-    "st280":"fill:url(#SVGID_276_)",
-    "st281":"fill:url(#SVGID_277_)",
-    "st282":"fill:url(#SVGID_278_)",
-    "st283":"fill:url(#SVGID_279_)",
-    "st284":"fill:url(#SVGID_280_)",
-    "st285":"fill:url(#SVGID_281_)",
-    "st286":"fill:url(#SVGID_282_)",
-    "st287":"fill:url(#SVGID_283_)",
-    "st288":"fill:url(#SVGID_284_)",
-    "st289":"fill:url(#SVGID_285_)",
-    "st290":"fill:url(#SVGID_286_)",
-    "st291":"fill:url(#SVGID_287_)",
-    "st292":"fill:url(#SVGID_288_)",
-    "st293":"fill:url(#SVGID_289_)",
-    "st294":"fill:url(#SVGID_290_)",
-    "st295":"fill:url(#SVGID_291_)",
-    "st296":"fill:url(#SVGID_292_)",
-    "st297":"fill:url(#SVGID_293_)",
-    "st298":"fill:url(#SVGID_294_)",
-    "st299":"fill:url(#SVGID_295_)",
-    "st300":"fill:url(#SVGID_296_)",
-    "st301":"fill:url(#SVGID_297_)",
-    "st302":"fill:url(#SVGID_298_)",
-    "st303":"fill:url(#SVGID_299_)",
-    "st304":"fill:url(#SVGID_300_)",
-    "st305":"fill:url(#SVGID_301_)",
-    "st306":"fill:url(#SVGID_302_)",
-    "st307":"fill:url(#SVGID_303_)",
-    "st308":"fill:url(#SVGID_304_)",
-    "st309":"fill:url(#SVGID_305_)",
-    "st310":"fill:url(#SVGID_306_)",
-    "st311":"fill:url(#SVGID_307_)",
-    "st312":"fill:url(#SVGID_308_)",
-    "st313":"fill:url(#SVGID_309_)",
-    "st314":"fill:url(#SVGID_310_)",
-    "st315":"fill:url(#SVGID_311_)",
-    "st316":"fill:url(#SVGID_312_)",
-    "st317":"fill:url(#SVGID_313_)",
-    "st318":"fill:url(#SVGID_314_)",
-    "st319":"fill:url(#SVGID_315_)",
-    "st320":"fill:url(#SVGID_316_)",
-    "st321":"fill:url(#SVGID_317_)",
-    "st322":"fill:url(#SVGID_318_)",
-    "st323":"fill:url(#SVGID_319_)",
-    "st324":"fill:url(#SVGID_320_)",
-    "st325":"fill:url(#SVGID_321_)",
-    "st326":"fill:url(#SVGID_322_)",
-    "st327":"fill:url(#SVGID_323_)",
-    "st328":"fill:url(#SVGID_324_)",
-    "st329":"fill:url(#SVGID_325_)",
-    "st330":"fill:url(#SVGID_326_)",
-    "st331":"fill:url(#SVGID_327_)",
-    "st332":"fill:url(#SVGID_328_)",
-    "st333":"fill:url(#SVGID_329_)",
-    "st334":"fill:url(#SVGID_330_)",
-    "st335":"fill:url(#SVGID_331_)",
-    "st336":"fill:url(#SVGID_332_)",
-    "st337":"fill:url(#SVGID_333_)",
-    "st338":"fill:url(#SVGID_334_)",
-    "st339":"fill:url(#SVGID_335_)",
-    "st340":"fill:url(#SVGID_336_)",
-    "st341":"fill:url(#SVGID_337_)",
-    "st342":"fill:url(#SVGID_338_)",
-    "st343":"fill:url(#SVGID_339_)",
-    "st344":"fill:url(#SVGID_340_)",
-    "st345":"fill:url(#SVGID_341_)",
-    "st346":"fill:url(#SVGID_342_)",
-    "st347":"fill:url(#SVGID_343_)",
-    "st348":"fill:url(#SVGID_344_)",
-    "st349":"fill:url(#SVGID_345_)",
-    "st350":"fill:url(#SVGID_346_)",
-    "st351":"fill:url(#SVGID_347_)",
-    "st352":"fill:url(#SVGID_348_)",
-    "st353":"fill:url(#SVGID_349_)",
-    "st354":"fill:url(#SVGID_350_)",
-    "st355":"fill:url(#SVGID_351_)",
-    "st356":"fill:url(#SVGID_352_)",
-    "st357":"fill:url(#SVGID_353_)",
-    "st358":"fill:url(#SVGID_354_)",
-    "st359":"fill:url(#SVGID_355_)",
-    "st360":"fill:url(#SVGID_356_)",
-    "st361":"fill:url(#SVGID_357_)",
-    "st362":"fill:url(#SVGID_358_)",
-    "st363":"fill:url(#SVGID_359_)",
-    "st364":"fill:url(#SVGID_360_)",
-    "st365":"fill:url(#SVGID_361_)",
-    "st366":"fill:url(#SVGID_362_)",
-    "st367":"fill:url(#SVGID_363_)",
-    "st368":"fill:url(#SVGID_364_)",
-    "st369":"fill:url(#SVGID_365_)",
-    "st370":"fill:url(#SVGID_366_)",
-    "st371":"fill:url(#SVGID_367_)",
-    "st372":"fill:url(#SVGID_368_)",
-    "st373":"fill:url(#SVGID_369_)",
-    "st374":"fill:url(#SVGID_370_)",
-    "st375":"fill:url(#SVGID_371_)",
-    "st376":"fill:url(#SVGID_372_)",
-    "st377":"fill:url(#SVGID_373_)",
-    "st378":"fill:url(#SVGID_374_)",
-    "st379":"fill:url(#SVGID_375_)",
-    "st380":"fill:url(#SVGID_376_)",
-    "st381":"fill:url(#SVGID_377_)",
-    "st382":"fill:url(#SVGID_378_)",
-    "st383":"fill:url(#SVGID_379_)",
-    "st384":"fill:url(#SVGID_380_)",
-    "st385":"fill:url(#SVGID_381_)",
-    "st386":"fill:url(#SVGID_382_)",
-    "st387":"fill:url(#SVGID_383_)",
-    "st388":"fill:url(#SVGID_384_)",
-    "st389":"fill:url(#SVGID_385_)",
-    "st390":"fill:url(#SVGID_386_)",
-    "st391":"fill:url(#SVGID_387_)",
-    "st392":"fill:url(#SVGID_388_)",
-    "st393":"fill:url(#SVGID_389_)",
-    "st394":"fill:url(#SVGID_390_)",
-    "st395":"fill:url(#SVGID_391_)",
-    "st396":"fill:url(#SVGID_392_)",
-    "st397":"fill:url(#SVGID_393_)",
-    "st398":"fill:url(#SVGID_394_)",
-    "st399":"fill:url(#SVGID_395_)",
-    "st400":"fill:url(#SVGID_396_)",
-    "st401":"fill:url(#SVGID_397_)",
-    "st402":"fill:url(#SVGID_398_)",
-    "st403":"fill:url(#SVGID_399_)",
-    "st404":"fill:url(#SVGID_400_)",
-    "st405":"fill:url(#SVGID_401_)",
-    "st406":"fill:url(#SVGID_402_)",
-    "st407":"fill:url(#SVGID_403_)",
-    "st408":"fill:url(#SVGID_404_)",
-    "st409":"fill:url(#SVGID_405_)",
-    "st410":"fill:url(#SVGID_406_)",
-    "st411":"fill:url(#SVGID_407_)",
-    "st412":"fill:url(#SVGID_408_)",
-    "st413":"fill:url(#SVGID_409_)",
-    "st414":"fill:url(#SVGID_410_)",
-    "st415":"fill:url(#SVGID_411_)",
-    "st416":"fill:url(#SVGID_412_)",
-    "st417":"fill:url(#SVGID_413_)",
-    "st418":"fill:url(#SVGID_414_)",
-    "st419":"fill:url(#SVGID_415_)",
-    "st420":"fill:url(#SVGID_416_)",
-    "st421":"fill:url(#SVGID_417_)",
-    "st422":"fill:url(#SVGID_418_)",
-    "st423":"fill:url(#SVGID_419_)",
-    "st424":"fill:url(#SVGID_420_)",
-    "st425":"fill:url(#SVGID_421_)",
-    "st426":"fill:url(#SVGID_422_)",
-    "st427":"fill:url(#SVGID_423_)",
-    "st428":"fill:#4B44BE",
-    "st429":"fill:url(#SVGID_424_)",
-    "st430":"fill:url(#SVGID_425_)",
-    "st431":"fill:url(#SVGID_426_)",
-    "st432":"fill:url(#SVGID_427_)",
-    "st433":"opacity:7.000000e-02;enable-background:new    ",
-    "st434":"fill:#FFFFFF",
-    "st435":"fill:url(#SVGID_428_)",
-    "st436":"fill:url(#SVGID_429_)",
-    "st437":"fill:url(#SVGID_430_)",
-    "st438":"fill:#7A5BF5"
+    "st1":"fill:#FFFFFF",
+    "st2":"fill:none;stroke:#BAC6F2;stroke-width:5;stroke-linecap:round;stroke-linejoin:round",
+    "st3":"fill:#4B44BE",
+    "st4":"fill:url(#ex24_1_)",
+    "st5":"fill:url(#ex24_2_)",
+    "st6":"fill:url(#ex24_3_)",
+    "st7":"fill:url(#ex24_4_)",
+    "st8":"opacity:7.000000e-02;enable-background:new    ",
+    "st9":"fill:url(#ex24_5_)",
+    "st10":"fill:url(#ex24_6_)",
+    "st11":"fill:url(#ex24_7_)",
+    "st12":"fill:url(#ex24_8_)",
+    "st13":"fill:#4A41BC",
+    "st14":"fill:url(#ex24_9_)",
+    "st15":"fill:url(#ex24_10_)",
+    "st16":"fill:url(#ex24_11_)",
+    "st17":"fill:url(#ex24_12_)",
+    "st18":"fill:url(#ex24_13_)",
+    "st19":"fill:url(#ex24_14_)",
+    "st20":"fill:url(#ex24_15_)"
 };
 
 var i;
 var number = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline");
 
 function transform() {
-  var i;
-  var number = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline,g");
+  var i,go,gh,gs,gt;
+
+  var number = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline,g,text");
+  var number_gradient_object = document.querySelectorAll(".gradient-object");
+  var number_gradient_hair = document.querySelectorAll(".gradient-hair");
+  var number_gradient_shirt = document.querySelectorAll(".gradient-shirt");
+  var number_gradient_trousers = document.querySelectorAll(".gradient-trousers");
+
 
   // adaugarea propritatilor inline
   for(i = 0; i < number.length; i++){
-    var component = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline,g")[i];
+    var component = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline,g,text")[i];
 
     for (const [key, value] of Object.entries(values)) {
       // console.log(key, value);
 
-        if(component.className.baseVal == key){
+        if(component.classList.contains(key)){
+          if(component.className.baseVal.length>=9) //daca are cel putin 2 clase
+          {
+            component.setAttribute("style", value);
+
+          }
+          else{
           component.removeAttribute('class');
           component.setAttribute("style", value);
+          }
         }
     }
+  }
+
+  for(i = 0; i < number.length; i++){
+    var dates = document.querySelectorAll('*[id^="Cup"],*[id^="bag"],*[id^="coin"],*[id^="Armchair"],*[id^="Table"],*[id^="chair"]');
+    console.log(dates);
   }
 
   //Inlocuirea id-urilor pentru a nu se suprapune cu celelalte
   $("svg").children().each(function() {
         // Se schimba mereu textul cu cel specific exercitiului
-       $(this).html($(this).html().replace(/SVGID/g,"ex16"));
+       $(this).html($(this).html().replace(/SVGID/g,"ex24"));
    });
 
 
 
 
   // Adaugare de stop1 si stop2
-  document.getElementsByClassName("gradient-trousers")[0].innerHTML =
+
+  for(gt = 0; gt < number_gradient_trousers.length; gt++){
+
+  document.getElementsByClassName("gradient-trousers")[gt].innerHTML =
   '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
 
-  document.getElementsByClassName("gradient-shirt")[0].innerHTML =
+  }
+
+  for(gs = 0; gs < number_gradient_shirt.length; gs++){
+
+  document.getElementsByClassName("gradient-shirt")[gs].innerHTML =
   '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
 
-  document.getElementsByClassName("gradient-hair")[0].innerHTML =
+  }
+
+  for(gh = 0; gh < number_gradient_hair.length; gh++){
+
+  document.getElementsByClassName("gradient-hair")[gh].innerHTML =
   '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
 
+  }
+
+  for(go = 0; go < number_gradient_object.length; go++){
+
+    document.getElementsByClassName("gradient-object")[go].innerHTML =
+    '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
+
+  }
+
+  //Pentru bag, chair, pig, cup, phone, grill, table, bank se
+  //pune clasa gradient-object si atributul data-color
 
 
-  document.getElementsByClassName("gradient-object")[0].innerHTML =
-  '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
-
-  document.getElementsByClassName("gradient-object")[1].innerHTML =
-  '<stop offset="0" class="stop1"></stop>' + '<stop offset="1" class="stop2"></stop>';
 }
 
 </script>
