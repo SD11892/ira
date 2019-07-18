@@ -157,6 +157,11 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
+.examples-page svg{
+  width: 80%;
+  margin: 35px 0;
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -169,6 +174,10 @@ a[rel="tooltip"]{
 
 .navbar .navbar-nav > li > a:hover{
   opacity: 0.9 !important;
+}
+
+.navbar .btn{
+  margin-top: 10px;
 }
 
 .navbar .btn.btn-fill{

@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-6">
       <!-- Import SVG -->
-      {% include examples/old-svg/svg24.html %}
+      {% include examples/old-svg/svg30.html %}
     </div>
     <div class="col-6">
       <button class="btn" onclick="transform()">Transform</button>
@@ -31,29 +31,52 @@
   // Variabilele in format JSON
   const values = {
     "st0":"fill:#F8F8FF",
-    "st1":"fill:#FFFFFF",
-    "st2":"fill:none;stroke:#BAC6F2;stroke-width:5;stroke-linecap:round;stroke-linejoin:round",
-    "st3":"fill:#4B44BE",
-    "st4":"fill:url(#ex24_1_)",
-    "st5":"fill:url(#ex24_2_)",
-    "st6":"fill:url(#ex24_3_)",
-    "st7":"fill:url(#ex24_4_)",
-    "st8":"opacity:7.000000e-02;enable-background:new    ",
-    "st9":"fill:url(#ex24_5_)",
-    "st10":"fill:url(#ex24_6_)",
-    "st11":"fill:url(#ex24_7_)",
-    "st12":"fill:url(#ex24_8_)",
-    "st13":"fill:#4A41BC",
-    "st14":"fill:url(#ex24_9_)",
-    "st15":"fill:url(#ex24_10_)",
-    "st16":"fill:url(#ex24_11_)",
-    "st17":"fill:url(#ex24_12_)",
-    "st18":"fill:url(#ex24_13_)",
-    "st19":"fill:url(#ex24_14_)",
-    "st20":"fill:url(#ex24_15_)"
+    "st1":"fill:#F5F5FC",
+    "st2":"fill:#FFFFFF",
+    "st3":"fill:#BAC6F2",
+    "st4":"fill:#B1C1F2",
+    "st5":"fill:#E9EDFA",
+    "st6":"fill:none;stroke:#BAC6F2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round",
+    "st7":"fill:none;stroke:#BAC6F2;stroke-width:6;stroke-linecap:round;stroke-linejoin:round",
+    "st8":"fill:#BAC5F4",
+    "st9":"fill:#FA5F5D",
+    "st10":"fill:#FDBC4E",
+    "st11":"fill:#37CD58",
+    "st12":"fill:url(#SVGID_1_)",
+    "st13":"fill:url(#SVGID_2_)",
+    "st14":"fill:url(#SVGID_3_)",
+    "st15":"fill:url(#SVGID_4_)",
+    "st16":"fill:url(#SVGID_5_)",
+    "st17":"fill:#E9EDFB",
+    "st18":"fill:url(#SVGID_6_)",
+    "st19":"fill:url(#SVGID_7_)",
+    "st20":"fill:url(#SVGID_8_)",
+    "st21":"fill:url(#SVGID_9_)",
+    "st22":"fill:url(#SVGID_10_)",
+    "st23":"fill:url(#SVGID_11_)",
+    "st24":"fill:url(#SVGID_12_)",
+    "st25":"fill:#4B44BE",
+    "st26":"fill:url(#SVGID_13_)",
+    "st27":"fill:url(#SVGID_14_)",
+    "st28":"fill:url(#SVGID_15_)",
+    "st29":"fill:url(#_Path__1_)",
+    "st30":"opacity:7.000000e-02;enable-background:new    ",
+    "st31":"fill:#EFEFEF",
+    "st32":"fill:url(#SVGID_16_)",
+    "st33":"fill:url(#SVGID_17_)",
+    "st34":"fill:url(#SVGID_18_)",
+    "st35":"fill:url(#SVGID_19_)",
+    "st36":"fill:url(#SVGID_20_)",
+    "st37":"fill:#FCFCFC",
+    "st38":"fill:#58CAEA",
+    "st39":"fill:url(#SVGID_21_)",
+    "st40":"fill:url(#SVGID_22_)",
+    "st41":"fill:url(#SVGID_23_)",
+    "st42":"fill:url(#SVGID_24_)",
+    "st43":"fill:url(#SVGID_25_)"
 };
 
-var i;
+var i, j, k;
 var number = document.querySelectorAll("path,rect,ellipse,polygon,circle,polyline");
 
 function transform() {
@@ -87,15 +110,10 @@ function transform() {
     }
   }
 
-  for(i = 0; i < number.length; i++){
-    var dates = document.querySelectorAll('*[id^="Cup"],*[id^="bag"],*[id^="coin"],*[id^="Armchair"],*[id^="Table"],*[id^="chair"]');
-    console.log(dates);
-  }
-
   //Inlocuirea id-urilor pentru a nu se suprapune cu celelalte
   $("svg").children().each(function() {
         // Se schimba mereu textul cu cel specific exercitiului
-       $(this).html($(this).html().replace(/SVGID/g,"ex24"));
+       $(this).html($(this).html().replace(/SVGID/g,"ex30"));
    });
 
 
@@ -133,6 +151,33 @@ function transform() {
 
   //Pentru bag, chair, pig, cup, phone, grill, table, bank se
   //pune clasa gradient-object si atributul data-color
+
+  var datesnr= document.querySelectorAll('*[id^="Cup"],*[id^="bag"],*[id^="coin"],*[id^="Armchair"],*[id^="Table"],*[id^="chair"]');
+  var titlesnr = document.querySelectorAll('title');
+  for(j = 0; j < datesnr.length; j++){
+    var dates = document.querySelectorAll('*[id^="Cup"],*[id^="bag"],*[id^="coin"],*[id^="Armchair"],*[id^="Table"],*[id^="chair"]')[j];
+
+    if(!dates.classList.contains("test")) //daca are cel putin 2 clase
+    {
+      dates.setAttribute("class", "gradient-object");
+      dates.setAttribute("data-color", "purple");
+
+
+    }
+  }
+
+  //daca nu are id verificam daca are titlul "pig with coins || bank" si punem
+  // pe parinte class si data-color
+  for(k = 0; k < titlesnr.length; k++){
+    var titles = document.querySelectorAll('title')[k];
+    if (titles.textContent == 'Pig with coins' || titles.textContent == 'bank')
+    {
+      titles.parentElement.setAttribute("class","gradient-object");
+      titles.parentElement.setAttribute("data-color","purple");
+    }
+  }
+
+
 
 
 }
