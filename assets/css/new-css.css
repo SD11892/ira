@@ -590,10 +590,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
       text-align: center;
     }
 
-    nav .btn{
-      display: none;
-    }
-
     .navbar-toggler:focus{
       outline: none;
     }
