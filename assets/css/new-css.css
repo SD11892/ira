@@ -122,6 +122,11 @@ a:not([href]):not([tabindex]):hover{
   opacity: 0.9 !important;
 }
 
+.btn-github {
+    border-color: #333333;
+    color: #333333 !important;
+}
+
 .btn-simple.btn-icon{
   padding: 16px;
   margin-right: 15px;
@@ -599,6 +604,27 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
     .navbar .navbar-collapse.collapse.show{
       display: block !important;
+    }
+
+    .section-backgrounds .col-4 {
+      margin-bottom: 30px !important;
+      margin-top: 30px !important;
+    }
+
+    .section-characters .col-4 {
+        padding-top: 75px !important;
+    }
+
+    .section-characters .girl_laptop{
+      padding-top: 130px !important;
+    }
+
+    .section-characters .girl-hand-up{
+      padding-top: 15px !important;
+    }
+
+    .space-180{
+      height: 100px !important;
     }
 
 }
