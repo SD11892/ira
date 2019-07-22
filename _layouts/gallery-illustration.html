@@ -479,7 +479,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		function download_svg(who){
 		  var parent = $(who).parent();
 		  var newe = $(who).get(0).cloneNode(true);
-		  saveSvg($(who).get(0),"new.svg");
+		  saveSvg($(who).get(0),$(who).attr('id'));
 		  $(who).remove();
 		  parent.append(newe);
 		}
