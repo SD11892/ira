@@ -3,9 +3,9 @@
 
 {% assign info = site.data.index %}
 
-{% elsif page.brand == "examples" %}
+{% elsif page.brand == "gallery" %}
 
-{% assign info = site.data.examples %}
+{% assign info = site.data.gallery %}
 
 {% endif %}
 
@@ -14,7 +14,7 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>IRA Design - Build your own amazing illustrations</title>
+	<title>IRA Design - {{ info.title }} @ Creative Tim</title>
 
 	<!-- Canonical SEO -->
 	<link rel="canonical" href="{{ info.canonical }}">
@@ -54,7 +54,7 @@
 
 	<link href="assets/css/new-css.css" rel="stylesheet" />
 
-	{% if page.brand == 'examples' %}
+	{% if page.brand == 'gallery' %}
 
 	<style type="text/css">
     .st0{fill:#4B49BB;}

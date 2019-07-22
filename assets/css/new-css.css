@@ -82,9 +82,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .btn{
   white-space: nowrap;
   display: inline-block;
-  line-height: 48px;
-  height: 50px;
-  padding: 0px 35px;
+  line-height: 40px;
+  height: 43px;
+  padding: 0px 25px;
   -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   background: #fff;
@@ -177,15 +177,8 @@ a[rel="tooltip"]{
 }
 
 .navbar .btn{
-  margin-top: 10px;
-}
-
-.navbar .btn.btn-fill{
+  margin-top: 13px;
   font-size: 12px;
-  padding-bottom: 10px;
-  padding-top: -8px;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 
 .navbar .dropdown-menu > a{
@@ -853,6 +846,19 @@ body > .navbar-collapse .navbar-nav li a:hover{
   margin-top: 100px;
 }
 
+.btn-dribbble{
+  background: #d95987;
+  border-color: #d95987;
+  color: #fff !important;
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:active,
+.btn-dribbble:hover:active,
+.btn-dribbble:focus{
+  background: #d95987;
+}
+
 .section-header .btn-twitter,
 .section-sharing .btn-twitter{
   background: #55acee;
@@ -982,7 +988,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
   background: #8ea3ff;
   border-color: #8ea3ff;
   color: #fff;
-  font-size: 16px;
   margin-right: 15px;
 }
 
