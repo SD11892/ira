@@ -167,6 +167,10 @@ a[rel="tooltip"]{
   margin: 35px 0;
 }
 
+.examples-page .section-ready .row{
+  margin-top: 115px !important;
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -651,7 +655,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .lamp {
-    margin-top: 10px !important;
+    margin-top: 70px !important;
   }
 
   .phone{
@@ -659,16 +663,35 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .bag-top{
-    margin-top: -5px !important;
+    margin-top: 80px !important;
   }
 
   .armchair-top{
-    margin-top: -20px !important;
+    margin-top: 50px !important;
   }
   .sleeve {
       margin-top: -10px !important;
   }
 
+  .fixed-plugin{
+    display: none !important;
+  }
+
+  .cup-index{
+    margin-top: 50px;
+  }
+
+  .photos-index{
+    margin-top: 50px;
+  }
+
+  .bank-index{
+    margin-top: 50px;
+  }
+
+  .sleeve{
+    margin-top: 40px !important;
+  }
 }
 
 
