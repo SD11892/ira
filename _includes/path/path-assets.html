@@ -2,12 +2,7 @@
 {% assign path-pages = '' %}
 {% assign path_size_minus = '' %}
 
-{% if page.layout == 'local-doc' %}
-  {% assign path_size_minus = 0 %}
-{% else %}
-  {% assign path_size_minus = site.path_size_minus %}
-{% endif %}
-
+{% assign path_size_minus = site.path_size_minus %}
 
 {% assign depth = page.url | split: '/' | size | minus: 1 | minus: path_size_minus %}
 {% if    depth <= 1 %}
@@ -32,18 +27,4 @@
 
 {% assign path-general = '' %}
 
-{% if page.layout == 'docs' %}
-  {% if site.product_path == "" %}
-    {% assign path-general = '../../..' %}
-  {% else %}
-    {% assign path-general = '../../../..' %}
-  {% endif %}
-{% elsif page.layout == 'local-doc'%}
-  {% if site.product_path == "" %}
-    {% assign path-general = '..' %}
-  {% else %}
-    {% assign path-general = '../..' %}
-  {% endif %}
-{% else %}
-  {% assign path-general = path-assets %}
-{% endif %}
+{% assign path-general = path-assets %}
