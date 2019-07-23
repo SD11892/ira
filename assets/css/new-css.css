@@ -82,9 +82,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .btn{
   white-space: nowrap;
   display: inline-block;
-  line-height: 48px;
-  height: 50px;
-  padding: 0px 35px;
+  line-height: 40px;
+  height: 43px;
+  padding: 0px 25px;
   -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   background: #fff;
@@ -122,6 +122,11 @@ a:not([href]):not([tabindex]):hover{
   opacity: 0.9 !important;
 }
 
+.btn-github {
+    border-color: #333333;
+    color: #333333 !important;
+}
+
 .btn-simple.btn-icon{
   padding: 16px;
   margin-right: 15px;
@@ -157,6 +162,18 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
+.examples-page svg{
+  width: 80%;
+}
+
+.examples-page .col-sm-6{
+  margin: 35px 0;
+}
+
+.examples-page .section-ready .row{
+  margin-top: 115px !important;
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -171,12 +188,9 @@ a[rel="tooltip"]{
   opacity: 0.9 !important;
 }
 
-.navbar .btn.btn-fill{
+.navbar .btn{
+  margin-top: 13px;
   font-size: 12px;
-  padding-bottom: 10px;
-  padding-top: -8px;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 
 .navbar .dropdown-menu > a{
@@ -581,10 +595,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
       text-align: center;
     }
 
-    nav .btn{
-      display: none;
-    }
-
     .navbar-toggler:focus{
       outline: none;
     }
@@ -601,6 +611,27 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
     .navbar .navbar-collapse.collapse.show{
       display: block !important;
+    }
+
+    .section-backgrounds .col-4 {
+      margin-bottom: 30px !important;
+      margin-top: 30px !important;
+    }
+
+    .section-characters .col-4 {
+        padding-top: 75px !important;
+    }
+
+    .section-characters .girl_laptop{
+      padding-top: 130px !important;
+    }
+
+    .section-characters .girl-hand-up{
+      padding-top: 15px !important;
+    }
+
+    .space-180{
+      height: 100px !important;
     }
 
 }
@@ -627,7 +658,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .lamp {
-    margin-top: 10px !important;
+    margin-top: 70px !important;
   }
 
   .phone{
@@ -635,16 +666,35 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .bag-top{
-    margin-top: -5px !important;
+    margin-top: 80px !important;
   }
 
   .armchair-top{
-    margin-top: -20px !important;
+    margin-top: 50px !important;
   }
   .sleeve {
       margin-top: -10px !important;
   }
 
+  .fixed-plugin{
+    display: none !important;
+  }
+
+  .cup-index{
+    margin-top: 50px;
+  }
+
+  .photos-index{
+    margin-top: 50px;
+  }
+
+  .bank-index{
+    margin-top: 50px;
+  }
+
+  .sleeve{
+    margin-top: 40px !important;
+  }
 }
 
 
@@ -848,6 +898,19 @@ body > .navbar-collapse .navbar-nav li a:hover{
   margin-top: 100px;
 }
 
+.btn-dribbble{
+  background: #d95987;
+  border-color: #d95987;
+  color: #fff !important;
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:active,
+.btn-dribbble:hover:active,
+.btn-dribbble:focus{
+  background: #d95987;
+}
+
 .section-header .btn-twitter,
 .section-sharing .btn-twitter{
   background: #55acee;
@@ -977,7 +1040,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
   background: #8ea3ff;
   border-color: #8ea3ff;
   color: #fff;
-  font-size: 16px;
   margin-right: 15px;
 }
 

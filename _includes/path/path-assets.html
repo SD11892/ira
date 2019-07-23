@@ -1,0 +1,30 @@
+{% assign path-assets = '' %}
+{% assign path-pages = '' %}
+{% assign path_size_minus = '' %}
+
+{% assign path_size_minus = site.path_size_minus %}
+
+{% assign depth = page.url | split: '/' | size | minus: 1 | minus: path_size_minus %}
+{% if    depth <= 1 %}
+        {% assign path-assets = '.' %}
+
+{% elsif depth == 2 %}
+        {% assign path-assets = '..' %}
+        {% assign path-pages = '.' %}
+
+{% elsif depth == 3 %}
+        {% assign path-assets = '../..' %}
+        {% assign path-pages = '..' %}
+{% elsif depth == 4 %}
+        {% assign path-assets = '../../..' %}
+        {% assign path-pages = '../..' %}
+{% elsif depth == 5 %}
+        {% assign path-assets = '../../../..' %}
+        {% assign path-pages = '../../..' %}
+{% endif %}
+
+
+
+{% assign path-general = '' %}
+
+{% assign path-general = path-assets %}

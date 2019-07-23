@@ -1,23 +1,28 @@
+
+{% if page.brand == "index" %}
+
+{% assign info = site.data.index %}
+
+{% elsif page.brand == "gallery" %}
+
+{% assign info = site.data.gallery %}
+
+{% endif %}
+
 <meta charset="utf-8" />
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 	<meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>IRA Design - Build your own amazing illustrations</title>
+	<title>IRA Design - {{ info.title }} @ Creative Tim</title>
 
 	<!-- Canonical SEO -->
-	<link rel="canonical" href="https://iradesign.io/">
+	<link rel="canonical" href="{{ info.canonical }}">
 
 	<!--  Social tags      -->
-	<meta name="keywords" content="illustration, app, website illustration, app illustration, design component, custom illustration, illustration component, color gradient, gradients">
+	<meta name="keywords" content="{{ info.keywords }}">
 
-	<meta name="description" content="Build your own amazing illustrations">
-
-	<!-- Schema.org markup for Google+ -->
-	<meta itemprop="name" content="IRA Design">
-	<meta itemprop="description" content="Build your own amazing illustrations.">
-
-	<meta itemprop="image" content="">
+	<meta name="description" content="{{ info.description }}">
 
 	<!-- Twitter Card data -->
 
@@ -25,7 +30,7 @@
 	<meta name="twitter:site" content="@creativetim">
 	<meta name="twitter:title" content="IRA Design by Creative Tim">
 
-	<meta name="twitter:description" content="Build your own amazing illustrations.">
+	<meta name="twitter:description" content="{{ info.description }}">
 	<meta name="twitter:creator" content="@creativetim">
 	<meta name="twitter:image" content="https://raw.githack.com/ira-design/ira-design.github.io/master/assets/img/iradesign.jpg">
 	<meta name="twitter:data1" content="IRA Design by Creative Tim">
@@ -36,22 +41,32 @@
 	<meta property="fb:app_id" content="655968634437471">
 	<meta property="og:title" content="IRA Design by Creative Tim">
 	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://iradesign.io/">
+	<meta property="og:url" content="{{ info.og_url }}">
 	<meta property="og:image" content="https://raw.githack.com/ira-design/ira-design.github.io/master/assets/img/iradesign.jpg">
-	<meta property="og:description" content="Build your own amazing illustrations.">
+	<meta property="og:description" content="{{ info.description }}">
 	<meta property="og:site_name" content="IRA Design">
 
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
 	<meta name="viewport" content="width=device-width" />
 
-	<link href="assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="assets/css/gsdk.css" rel="stylesheet"/>
+	<link href="{{ path-general }}/assets/bootstrap-4/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="{{ path-general }}/assets/css/gsdk.css" rel="stylesheet"/>
 
-	<link href="assets/css/new-css.css" rel="stylesheet" />
+	<link href="{{ path-general }}/assets/css/new-css.css" rel="stylesheet" />
+
+	{% if page.brand == 'gallery' %}
+
+	<style type="text/css">
+    .st0{fill:#4B49BB;}
+    .st5{opacity:7.000000e-02;enable-background:new    ;}
+    .st6{fill:#FFFFFF;}
+  </style>
+
+	{% endif %}
 
 	<!--     Fonts and icons     -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="assets/css/icons.css">
+<link rel="stylesheet" type="text/css" href="{{ path-general }}/assets/css/icons.css">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
