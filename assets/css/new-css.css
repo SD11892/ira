@@ -164,6 +164,9 @@ a[rel="tooltip"]{
 
 .examples-page svg{
   width: 80%;
+}
+
+.examples-page .col-sm-6{
   margin: 35px 0;
 }
 
