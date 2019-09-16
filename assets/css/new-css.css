@@ -695,6 +695,114 @@ body > .navbar-collapse .navbar-nav li a:hover{
   .sleeve{
     margin-top: 40px !important;
   }
+
+  .section-header .title{
+    margin-top: 0px !important;
+    font-size: 40px;
+  }
+
+  .section-header .desc{
+    font-size: 25px;
+  }
+
+  .section-header span{
+    display: table;
+    position: relative !important;
+    margin-left: auto !important;
+    margin-right: auto;
+
+  }
+
+  .section-header .btn-simple.btn-icon{
+    margin-right: 5px;
+  }
+
+  .section-how .title{
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .section-how .info .description{
+    padding-left: 0;
+  }
+
+  .section-responsive .info .description{
+    padding-left: 0;
+  }
+
+  .section-responsive .title{
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+
+  .section-colors .change-colors{
+    margin-left: 0;
+  }
+
+  .section-colors .title{
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .section-ready .title{
+    font-size: 40px;
+  }
+
+  .section-characters{
+    padding-top: 0;
+  }
+  .section-characters .title{
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .section-backgrounds .title{
+    font-size: 40px;
+  }
+
+  .section-objects .title{
+    font-size: 40px;
+  }
+
+
+  .section-characters .women-check-phone{
+    padding-top: 60px !important;
+  }
+
+  .section-characters .girl_laptop{
+    padding-top: 130px !important;
+  }
+
+  .section-characters .boy-hand-up{
+    padding-top: 120px !important;
+  }
+
+  .section-characters .man-simple{
+    padding-top: 50px !important;
+  }
+
+  .section-characters .man-lift{
+    padding-top: 50px !important;
+  }
+
+  .section-characters .child-girl{
+    padding-top: 100px !important;
+  }
+
+  .section-footer .title{
+    font-size: 40px;
+  }
+
+  .section-footer .info img{
+    width: 100%;
+  }
+
+  .examples-page .section-ready .row{
+    margin-top: 0px !important;
+  }
+
+
+
 }
 
 
