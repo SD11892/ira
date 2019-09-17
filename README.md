@@ -7,13 +7,16 @@ IRA Design helps you scale your final illustrations and bring them to life. Down
 
 ## Components:
 
-+ 11 characters
-+ 16 objects
-+ 15 backgrounds
++ [11 characters](https://iradesign.io/#show-options)
++ [16 objects](https://iradesign.io/#objects)
++ [15 backgrounds](https://iradesign.io/#backgrounds)
++ [30 examples](https://iradesign.io/gallery/illustrations)
 
 ## Links:
 
 + [Live Preview](https://iradesign.io/)
++ [Gallery](https://iradesign.io/gallery/illustrations)
+
 
 ## Download:
 
@@ -24,15 +27,18 @@ IRA Design helps you scale your final illustrations and bring them to life. Down
 
 ## Useful Links
 
-More products from Creative Tim: <http://www.creative-tim.com/products>
+- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=mk-github-readme) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=mk-github-readme) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=mk-github-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=mk-github-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=mk-github-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=mk-github-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=mk-github-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=mk-github-readme)
 
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <http://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
-
-Social Media:
+### Social Media
 
 Twitter: <https://twitter.com/CreativeTim>
 
@@ -40,6 +46,4 @@ Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
 
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+Instagram: <https://www.instagram.com/CreativeTimOfficial>
