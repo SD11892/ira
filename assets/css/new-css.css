@@ -162,6 +162,10 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
+.examples-page .section-header img{
+  width: 15%;
+}
+
 .examples-page svg{
   width: 80%;
 }
@@ -722,6 +726,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   .section-header .title{
     margin-top: 0px !important;
     font-size: 40px;
+  }
+
+  .examples-page .section-header img{
+    margin-bottom: 25px;
   }
 
   .section-header .desc{
