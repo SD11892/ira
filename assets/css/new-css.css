@@ -162,6 +162,10 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
+.examples-page .section-header img{
+  width: 15%;
+}
+
 .examples-page svg{
   width: 80%;
 }
@@ -638,7 +642,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 @media (max-width:576px){
   #women_hand {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   #girl_laptop {
@@ -655,6 +659,30 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
   #Books {
     margin-top: 20px;
+  }
+
+  .navbar .navbar-nav > li > a.social{
+    margin: 5px 0;
+  }
+
+  body .navbar-collapse .navbar-nav{
+    margin: 0px;
+  }
+
+  .box-info{
+    margin-top: 25px;
+    border: 1px dashed #d0d0d0;
+    border-radius: 5px;
+    background: rgba(0,147,255, .1);
+    vertical-align: center;
+  }
+
+  .box-info p{
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #7b95e7;
   }
 
   .lamp {
@@ -695,6 +723,150 @@ body > .navbar-collapse .navbar-nav li a:hover{
   .sleeve{
     margin-top: 40px !important;
   }
+
+  .section-header .title{
+    margin-top: 0px !important;
+    font-size: 40px;
+  }
+
+  .examples-page .section-header img{
+    margin-bottom: 25px;
+    width: 25%;
+  }
+
+  .section-header .desc{
+    font-size: 18px;
+  }
+
+  .section-header .category{
+    margin-bottom: 12px !important;
+  }
+
+  .section-header span{
+    display: table;
+    position: relative !important;
+    margin-left: auto !important;
+    margin-right: auto;
+
+  }
+
+  .section-header .btn-simple.btn-icon{
+    margin-right: 5px;
+  }
+
+  .section-how .title{
+    margin-top: 0;
+    font-size: 39px;
+  }
+
+  .section-how .info .description{
+    padding-left: 0;
+  }
+
+  .section-responsive .info .description{
+    padding-left: 0;
+  }
+
+  .section-help .desc{
+    font-size: 19px;
+  }
+
+  .section-responsive .title{
+    font-size: 39px;
+    margin-bottom: 0;
+  }
+
+  .section-colors .change-colors{
+    margin-left: 0;
+  }
+
+  .section-colors .desc{
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .section-colors .title{
+    margin-top: 0;
+    font-size: 39px;
+  }
+
+  .section-ready .title{
+    font-size: 39px;
+  }
+
+  .section-characters{
+    padding-top: 0;
+  }
+  .section-characters .title{
+    margin-top: 0;
+    font-size: 40px;
+  }
+
+  .section-backgrounds .title{
+    font-size: 40px;
+  }
+
+  .section-objects .title{
+    font-size: 40px;
+  }
+
+
+  .section-characters .women-check-phone{
+    padding-top: 60px !important;
+  }
+
+  .section-characters .girl_laptop{
+    padding-top: 130px !important;
+  }
+
+  .section-characters .boy-hand-up{
+    padding-top: 120px !important;
+  }
+
+  .section-characters .man-simple{
+    padding-top: 50px !important;
+  }
+
+  .section-characters .man-lift{
+    padding-top: 50px !important;
+  }
+
+  .section-characters .child-girl{
+    padding-top: 100px !important;
+  }
+
+  .section-footer .info{
+    margin-top: 10px;
+  }
+
+  .section-footer .title{
+    font-size: 40px;
+  }
+
+  .section-footer .info img{
+    width: 100%;
+  }
+
+  .section-footer .desc{
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+
+  .section-footer img{
+    margin-top: 30px;
+  }
+
+  .section-footer .info .description .btn{
+    margin-top: 0;
+  }
+
+  .examples-page .section-ready .row{
+    margin-top: 0px !important;
+  }
+
+
+
 }
 
 
