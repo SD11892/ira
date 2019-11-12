@@ -162,7 +162,7 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
-.examples-page .section-header img{
+.examples-page .section-header .logo{
   width: 15%;
 }
 
@@ -1655,7 +1655,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   position: fixed;
   z-index: 1000;
   right: -137px;
-  top: 45%;
+  top: 20%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 2px solid #7793ec;
@@ -1756,4 +1756,43 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 #crowbar-workspace{
   display: none;
+}
+
+/*Codefund*/
+
+@media(min-width: 981px){
+  .code-fund{
+    position: fixed;
+    right: 0;
+    max-width: 160px;
+    bottom: 0;
+  }
+
+  .code-fund .cf-img{
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 980px){
+  .code-fund{
+    margin-top: 50px;
+  }
+
+  .code-fund.align-left #cf{
+    margin-left: 0 !important;
+  }
+}
+
+.code-fund{
+  z-index: 9999;
+}
+
+.code-fund span{
+  margin-top: 0;
+  margin-left: 0;
+  position: inherit;
+}
+
+.code-fund img{
+  width: auto !important;
 }
