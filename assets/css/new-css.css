@@ -1103,7 +1103,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .section-header .category{
   color: #8ba1ff;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section-header span{
@@ -1758,33 +1758,21 @@ body > .navbar-collapse .navbar-nav li a:hover{
   display: none;
 }
 
-/*Codefund*/
 
-@media(min-width: 981px){
   .code-fund{
-    position: fixed;
-    right: 0;
-    max-width: 160px;
-    bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background: #fff;
   }
 
-  .code-fund .cf-img{
-    margin-bottom: 10px;
-  }
-}
-
-@media(max-width: 980px){
-  .code-fund{
-    margin-top: 50px;
-  }
-
-  .code-fund.align-left #cf{
-    margin-left: 0 !important;
-  }
-}
 
 .code-fund{
   z-index: 9999;
+
+}
+
+.code-fund .cf-wrapper{
+  background-color: #fff !important;
 }
 
 .code-fund span{
@@ -1795,4 +1783,11 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .code-fund img{
   width: auto !important;
+  margin-bottom: 0 !important;
+}
+
+@media(min-width:576px){
+  .code-fund.align-left #cf{
+    margin-left: 0 !important;
+  }
 }
