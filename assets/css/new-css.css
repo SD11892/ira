@@ -162,7 +162,7 @@ a[rel="tooltip"]{
   margin-top: 100px;
 }
 
-.examples-page .section-header img{
+.examples-page .section-header .logo{
   width: 15%;
 }
 
@@ -1103,7 +1103,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .section-header .category{
   color: #8ba1ff;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .section-header span{
@@ -1655,7 +1655,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   position: fixed;
   z-index: 1000;
   right: -137px;
-  top: 45%;
+  top: 20%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 2px solid #7793ec;
@@ -1756,4 +1756,38 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 #crowbar-workspace{
   display: none;
+}
+
+
+  .code-fund{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background: #fff;
+  }
+
+
+.code-fund{
+  z-index: 9999;
+
+}
+
+.code-fund .cf-wrapper{
+  background-color: #fff !important;
+}
+
+.code-fund span{
+  margin-top: 0;
+  margin-left: 0;
+  position: inherit;
+}
+
+.code-fund img{
+  width: auto !important;
+  margin-bottom: 0 !important;
+}
+
+@media(min-width:576px){
+  .code-fund.align-left #cf{
+    margin-left: 0 !important;
+  }
 }
