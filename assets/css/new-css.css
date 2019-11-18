@@ -1791,3 +1791,19 @@ body > .navbar-collapse .navbar-nav li a:hover{
     margin-left: 0 !important;
   }
 }
+
+/*notifications*/
+.alert{
+  background: #91a5f9;
+  border-radius: 4px;
+  max-width: 600px;
+  padding-right: 80px;
+}
+
+.alert button.close:focus{
+  outline: none;
+}
+
+.alert .close:hover{
+  color: #c9d3f9;
+}
