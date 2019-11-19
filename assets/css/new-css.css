@@ -1800,6 +1800,12 @@ body > .navbar-collapse .navbar-nav li a:hover{
   padding-right: 80px;
 }
 
+.alert button.close{
+  text-shadow: none;
+  color: #ffffff;
+  top: 8px !important;
+}
+
 .alert button.close:focus{
   outline: none;
 }

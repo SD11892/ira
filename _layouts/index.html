@@ -5567,9 +5567,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id="crowbar-workspace">
 </div>
-
-<button class="btn btn-default" data-toggle="notify" data-placement="top" data-align="left" data-type="default" data-icon="ni ni-bell-55">Top Left</button>
-
 </body>
 
   <!--  jQuery and Bootstrap core files    -->
@@ -5628,6 +5625,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  })
 		  $(who).remove();
 		  parent.append(newe);
+
+			$.notify({
+				title: "<strong>Thank you!</strong> ",
+				message: "If you enjoy our work please recommend us to a friend."
+			},{
+				delay: 10000,
+				placement: {
+					from: "top",
+					align: "left"
+				},
+			});
 		}
 		function saveSvg(svgEl, name) {
 		  applyStylesheets(svgEl)
@@ -5650,6 +5658,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  saveSvg($(who).get(0),$(who).attr('id'));
 		  $(who).remove();
 		  parent.append(newe);
+			$.notify({
+				title: "<strong>Thank you!</strong> ",
+				message: "If you enjoy our work please recommend us to a friend."
+			},{
+				delay: 10000,
+				placement: {
+					from: "top",
+					align: "left"
+				},
+			});
 		}
 
 		function applyStylesheets(svgEl) {
