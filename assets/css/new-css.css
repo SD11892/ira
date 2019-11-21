@@ -1813,3 +1813,15 @@ body > .navbar-collapse .navbar-nav li a:hover{
 .alert .close:hover{
   color: #c9d3f9;
 }
+
+.alert .share .btn{
+  background: #fff;
+  border-color: #fff;
+  border: none;
+  box-shadow: none;
+  padding: 0px 7px;
+  font-size: 16px;
+  margin-right: 7px;
+  line-height: 30px;
+  height: 27px;
+}

@@ -5599,14 +5599,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					$(svgs[i]).attr("height",$(svgs[i]).height());
 
 				}
-	        // the body of this function is in assets/js/now-ui-kit.js
-					$(function () {
-					  $('[data-toggle="tooltip"]').tooltip()
-					});
 
-					$('.dropdown-toggle').dropdown();
-
-
+				$('.dropdown-toggle').dropdown();
 
 	    });
 	</script>
@@ -5626,15 +5620,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  $(who).remove();
 		  parent.append(newe);
 
-			$.notify({
-				title: "<strong>Thank you!</strong> ",
-				message: "If you enjoy our work please recommend us to a friend."
+				$.notify({
+				title: 'Application Installing',
+				message: 'Developing nations social innovation shift globalization, invest safeguards life-expectancy positive social change. Gender care, new approaches empowerment diversity.'
 			},{
-				delay: 10000,
+				type: 'pastel-info',
+				delay: 500000,
+				allow_dismiss: true,
 				placement: {
-					from: "top",
-					align: "left"
+					from: "bottom",
+					align: "right"
 				},
+				template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+					'<h5 class="font-weight-bold">Thank you</h5>' +
+					'<button type="button" class="close" data-notify="dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+					'<div>' +
+					'<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>Ira Design</b> to gain exposure. Help us with a share on social media.</p>' +
+					'<div class="share">' +
+					'<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-twitter" target="_blank">'+
+					'<i class="fab fa-twitter"></i>'+
+					'</a>'+
+					'<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.iradesign.io" class="btn btn-facebook" target="_blank">' +
+					'<i class="fab fa-facebook"></i>'+
+					'</a>' +
+					'</div>'+
+					'</div>' +
+				'</div>'
 			});
 		}
 		function saveSvg(svgEl, name) {
@@ -5659,15 +5670,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  $(who).remove();
 		  parent.append(newe);
 			$.notify({
-				title: "<strong>Thank you!</strong> ",
-				message: "If you enjoy our work please recommend us to a friend."
-			},{
-				delay: 10000,
-				placement: {
-					from: "top",
-					align: "left"
-				},
-			});
+			title: 'Application Installing',
+			message: 'Developing nations social innovation shift globalization, invest safeguards life-expectancy positive social change. Gender care, new approaches empowerment diversity.'
+		},{
+			type: 'pastel-info',
+			delay: 500000,
+			allow_dismiss: true,
+			placement: {
+				from: "bottom",
+				align: "right"
+			},
+			template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
+				'<h5 class="font-weight-bold">Thank you</h5>' +
+				'<button type="button" class="close" data-notify="dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+				'<div>' +
+				'<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>Ira Design</b> to gain exposure. Help us with a share on social media.</p>' +
+				'<div class="share">' +
+				'<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-twitter" target="_blank">'+
+				'<i class="fab fa-twitter"></i>'+
+				'</a>'+
+				'<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.iradesign.io" class="btn btn-facebook" target="_blank">' +
+				'<i class="fab fa-facebook"></i>'+
+				'</a>' +
+				'</div>'+
+				'</div>' +
+			'</div>'
+		});
 		}
 
 		function applyStylesheets(svgEl) {
