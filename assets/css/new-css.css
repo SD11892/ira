@@ -1115,6 +1115,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   background: #d95987;
 }
 
+.section-header .header-image{
+  width: 120%;
+}
+
 .section-header .btn-twitter,
 .section-sharing .btn-twitter{
   background: #55acee;
