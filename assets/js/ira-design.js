@@ -42,11 +42,11 @@ function download_png (who) {
       '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Help us with a share on social media.</p>' +
       '<div class="copy-code w-75">'+
       '<textarea id="copycode" class="w-100">'   +
-      ' <a href="https://iradesign.io/">Illustrations by IRA Design</a> '+
+      ' <a href="https://iradesign.io">Illustrations by IRA Design</a> '+
       '</textarea>'+
       '<pre>'+
       '<code>'+
-      ' &lt;a href="https://iradesign.io/"&gt; '+
+      ' &lt;a href="https://iradesign.io"&gt; '+
       '<br>'+
       '   Illustrations by IRA Design '+
       '<br>'+
@@ -107,11 +107,11 @@ function download_svg(who){
     '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Help us with a share on social media.</p>' +
     '<div class="copy-code w-75">'+
     '<textarea id="copycode" class="w-100">'   +
-    ' <a href="https://iradesign.io/">Illustrations by IRA Design</a> '+
+    ' <a href="https://iradesign.io">Illustrations by IRA Design</a> '+
     '</textarea>'+
     '<pre>'+
     '<code>'+
-    ' &lt;a href="https://iradesign.io/"&gt; '+
+    ' &lt;a href="https://iradesign.io"&gt; '+
     '<br>'+
     '   Illustrations by IRA Design '+
     '<br>'+
