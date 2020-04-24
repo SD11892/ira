@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://iradesign.io/sitemap.xml
