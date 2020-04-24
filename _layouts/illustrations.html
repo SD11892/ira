@@ -8,7 +8,11 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBT68RX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+{% if page.brand != 'illustrations-backgrounds' %}
+
 	<div class="change-colors fixed-plugin fas">
+		{% if page.brand != 'illustrations-objects' %}
+
 		<p class="text-clothes"><img src="{{ path-general }}/assets/img/leggins.svg">Trousers</p>
 		<div class="colors badge-colors-trousers">
 				<span class="badge filter badge-purple active" data-color="purple"></span>
@@ -35,7 +39,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<span class="badge filter badge-warning" data-color="orange"></span>
 				<span class="badge filter badge-danger" data-color="red"></span>
 		</div>
+		{% endif %}
 
+		{% if page.brand == 'illustrations-objects' %}
 		<p class="text-object"><img src="{{ path-general }}/assets/img/object.svg">Objects</p>
 		<div class="badge-colors-objects">
 				<span class="badge filter badge-purple active" data-color="purple"></span>
@@ -44,7 +50,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<span class="badge filter badge-warning" data-color="orange"></span>
 				<span class="badge filter badge-danger" data-color="red"></span>
 		</div>
+		{% endif %}
 	</div>
+	{% endif %}
 
 	{% include navbar.html %}
 
