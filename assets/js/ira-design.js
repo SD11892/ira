@@ -36,23 +36,32 @@ function download_png (who) {
       align: "right"
     },
     template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
-      '<h5 class="font-weight-bold">Thank you</h5>' +
+      '<h4 class="font-weight-bold mt-1">Thank you!</h4>' +
       '<button type="button" class="close" data-notify="dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
       '<div>' +
-      '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>Ira Design</b> to gain exposure. Help us with a share on social media.</p>' +
+      '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Help us with a share on social media.</p>' +
       '<div class="copy-code w-75">'+
-      '<textarea id="textarea" class="w-100">'   +
-      ' <a href=“https://iradesign.io/”>Illustrations by IRA Design</a> '+
+      '<textarea id="copycode" class="w-100">'   +
+      ' <a href="https://iradesign.io/">Illustrations by IRA Design</a> '+
       '</textarea>'+
+      '<pre>'+
+      '<code>'+
+      ' &lt;a href="https://iradesign.io/"&gt; '+
       '<br>'+
-      '<button onclick="copy()">Copy</button>'+
+      '   Illustrations by IRA Design '+
+      '<br>'+
+      ' &lt;/a&gt; '+
+      '</code>'+
+      '</pre>' +
+      '<button class="btn" id="buttonCopy" onclick="copy()">Copy code</button>'+
       '</div>'+
+      '<br>'+
       '<div class="share">' +
       '<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-lg btn-twitter" target="_blank">'+
       '<i class="fab fa-twitter"></i>'+
       '</a>'+
       '<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.iradesign.io" class="btn btn-facebook" target="_blank">' +
-      '<i class="fab fa-facebook"></i>'+
+      '<i class="fab fa-facebook-f px-1"></i>'+
       '</a>' +
       '</div>'+
       '</div>' +
@@ -92,16 +101,32 @@ function download_svg(who){
     align: "right"
   },
   template: '<div data-notify="container" class="col-xs-11 col-sm-3 alert alert-{0}" role="alert">' +
-    '<h5 class="font-weight-bold">Thank you</h5>' +
+    '<h4 class="font-weight-bold mt-1">Thank you!</h4>' +
     '<button type="button" class="close" data-notify="dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
     '<div>' +
-    '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>Ira Design</b> to gain exposure. Help us with a share on social media.</p>' +
+    '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Help us with a share on social media.</p>' +
+    '<div class="copy-code w-75">'+
+    '<textarea id="copycode" class="w-100">'   +
+    ' <a href="https://iradesign.io/">Illustrations by IRA Design</a> '+
+    '</textarea>'+
+    '<pre>'+
+    '<code>'+
+    ' &lt;a href="https://iradesign.io/"&gt; '+
+    '<br>'+
+    '   Illustrations by IRA Design '+
+    '<br>'+
+    ' &lt;/a&gt; '+
+    '</code>'+
+    '</pre>' +
+    '<button class="btn" id="buttonCopy" onclick="copy()">Copy code</button>'+
+    '</div>'+
+    '<br>'+
     '<div class="share">' +
-    '<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-twitter" target="_blank">'+
+    '<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-lg btn-twitter" target="_blank">'+
     '<i class="fab fa-twitter"></i>'+
     '</a>'+
     '<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.iradesign.io" class="btn btn-facebook" target="_blank">' +
-    '<i class="fab fa-facebook"></i>'+
+    '<i class="fab fa-facebook-f px-1"></i>'+
     '</a>' +
     '</div>'+
     '</div>' +
@@ -229,3 +254,10 @@ var scroll = $(window).scrollTop();
         $(".navbar").removeClass("shadow-sm");
     }
 });
+
+
+ function copy() {
+   var copyText = document.getElementById("copycode");
+      copyText.select();
+      document.execCommand("Copy");
+ }

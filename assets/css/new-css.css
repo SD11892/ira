@@ -1855,9 +1855,54 @@ body > .navbar-collapse .navbar-nav li a:hover{
   border-color: #fff;
   border: none;
   box-shadow: none;
-  padding: 0px 7px;
-  font-size: 16px;
+  padding: 5px 13px;
+  font-size: 18px;
   margin-right: 7px;
   line-height: 30px;
-  height: 27px;
+  height: 37px;
+}
+
+.copy-code{
+  position: relative;
+}
+
+.copy-code textarea{
+  opacity: 0;
+  position: absolute;
+}
+
+.copy-code pre{
+  display: block;
+  padding: 16px 9.5px;
+  margin: 0px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  color: #333333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.copy-code .btn{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  line-height: 0px;
+  height: 24px;
+  font-size: 10px;
+  background: #6772e5;
+  border: #6772e5;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.copy-code .btn:hover{
+  background: #4856e8;
+  border: #4856e8;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
 }
