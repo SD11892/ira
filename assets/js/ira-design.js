@@ -39,7 +39,7 @@ function download_png (who) {
       '<h4 class="font-weight-bold mt-1">Thank you!</h4>' +
       '<button type="button" class="close" data-notify="dismiss" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
       '<div>' +
-      '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Help us with a share on social media.</p>' +
+      '<p class="mb-2">Crediting isn’t required, but is appreciated and allows <b>IRA Design</b> to gain exposure. Add this text on your website, or help us with a share on Facebook/Twitter.</p>' +
       '<div class="copy-code w-75">'+
       '<textarea id="copycode" class="w-100">'   +
       ' <a href="https://iradesign.io">Illustrations by IRA Design</a> '+
