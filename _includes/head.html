@@ -7,6 +7,22 @@
 
 {% assign info = site.data.gallery %}
 
+{% elsif page.brand == "illustrations" %}
+
+{% assign info = site.data.illustrations %}
+
+{% elsif page.brand == "illustrations-backgrounds" %}
+
+{% assign info = site.data.illustrations-backgrounds %}
+
+{% elsif page.brand == "illustrations-characters" %}
+
+{% assign info = site.data.illustrations-characters %}
+
+{% elsif page.brand == "illustrations-objects" %}
+
+{% assign info = site.data.illustrations-objects %}
+
 {% endif %}
 
 <meta charset="utf-8" />
