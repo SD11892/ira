@@ -193,7 +193,9 @@ function traverse(obj){
   return tree;
 }
 
-var t = $("#show-options").offset().top;
+if($("#show-options").length > 0){
+  var t = $("#show-options").offset().top;
+}
 var c = $("#close-menu").offset().top;
 
 
