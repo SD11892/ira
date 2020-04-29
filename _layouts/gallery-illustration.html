@@ -56,20 +56,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		 <div class="section section-ready section-header">
 			 <div class="container">
-        <div class="col-md-8 mx-auto text-center my-sm-5">
-					<img src="{{ path-general }}/assets/img/ira-logo-lg.png" class="logo">
-          <h1 class="title mt-sm-4">	Illustration gallery </h1>
-          <h3 class="desc mb-5"> Discover IRA illustrations to power up your project.</h3>
-					<div id="codefund" class="code-fund"><!-- fallback content --></div>
- 				 	<script src="https://app.codefund.io/properties/538/funder.js" async="async"></script>
-					<a href="https://dribbble.com/creativetim" class="btn btn-simple btn-dribbble btn-icon" target="_blank"><i class="fab fa-dribbble"></i></a>
-								<a href="https://twitter.com/CreativeTim" class="btn btn-simple btn-twitter btn-icon" target="_blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.facebook.com/CreativeTim" class="btn btn-simple btn-facebook btn-icon" target="_blank"><i class="fab fa-facebook"></i></a>
-								<a href="https://github.com/ira-design/ira-illustrations" class="btn btn-simple btn-github btn-icon" target="_blank"><i class="fab fa-github"></i></a>
+				 <div class="row">
+ 					<div class="col-lg-5 text-sm-left text-center" style="z-index:2;">
+ 							 <h1 class="title">IRA Design Gallery</h1>
+ 							 <h4 class="desc">Discover IRA illustrations to power up your project.</h4>
+ 							 <h6 class="category category-absolute rellax-text" data-rellax-speed="-2">
+ 								 <a href="https://www.creative-tim.com?ref=iradesign-header" target="_blank">
+ 										 <img src="{{ path-general }}/assets/img/creative-tim.png" class="creative-tim-logo">
+ 										 Creative Tim
+ 								 </a>
+ 								 product.
+ 								 <a class="github-button" href="https://github.com/ira-design/ira-illustrations" data-icon="octicon-star" data-show-count="true" aria-label="Star ira-design on GitHub">Star</a>
+ 							 </h6>
+
+ 							 <div id="codefund" class="code-fund align-left"><!-- fallback content --></div>
+ 							 <script src="https://app.codefund.io/properties/538/funder.js" async="async"></script>
+
+ 							 <a href="https://dribbble.com/creativetim" class="btn btn-simple btn-dribbble btn-icon" target="_blank"><i class="fab fa-dribbble"></i></a>
+ 							 <a href="https://twitter.com/CreativeTim" class="btn btn-simple btn-twitter btn-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+ 							 <a href="https://www.facebook.com/CreativeTim" class="btn btn-simple btn-facebook btn-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+ 							 <a href="https://github.com/ira-design/ira-illustrations" class="btn btn-simple btn-github btn-icon" target="_blank"><i class="fab fa-github"></i></a>
+
+ 					 </div>
+ 					 <div class="col-lg-7">
+
+ 							 <img src="{{ path-general }}/assets/img/ira_gallery.png" class="header-image d-md-block d-none">
 
 
+ 					 </div>
 
-       </div>
+ 				 </div>
 				<div class="row my-sm-5 py-sm-5">
 					<div class="col-lg-4 col-sm-6 mx-auto text-center hover-on px-sm-3 px-0">
 						{% include examples/svg/svg1.html %}
@@ -329,64 +345,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 
-		<div class="section section-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-12 text-left">
-						<h2 class="title">Give it a chance</h2>
-						<h4 class="desc">
-							IRA comes with a great variety of ready-to-use features, gradients and components. You can use the samples as they are or you can add new block from the UI Kit.
-						</h4>
-						<a class="github-button" href="https://github.com/ira-design/ira-illustrations" data-icon="octicon-star" data-show-count="true" aria-label="Star ira-design on GitHub">Star</a>
+	{% include sections/using-ira.html %}
 
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="info">
-							<img src="{{ path-general }}/assets/img/fordeveloper.png">
-							<div class="description">
-								<h4 class="info-title">For developers</h4>
-								<p class="desc">
-									Start building your mobile app in no time. Simply select the components you like
-									and start customising to suit your needs.
-								</p>
-								<a href="https://github.com/ira-design/ira-illustrations/blob/SVG/SVG.zip?raw=true" class="btn btn-fill " target="_blank">Download SVG</a>
-							</div>
-						</div>
-					</div>
+	{% include sections/give-it-chance.html %}
 
-					<div class="col-lg-4">
-						<div class="info">
-							<img src="{{ path-general }}/assets/img/fordesigner.png">
-							<div class="description">
-								<h4 class="info-title">For designers</h4>
-								<p class="desc">
-									Build an app you love. 200+ individually designed components,
-									each with a specific purpose.
-								</p>
-								<a href="https://github.com/ira-design/ira-illustrations/blob/PNG/PNG.zip?raw=true" class="btn btn-fill ">Download PNG</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4">
-						<div class="info">
-							<img src="{{ path-general }}/assets/img/examples.png">
-							<div class="description">
-								<h4 class="info-title">Explore gallery</h4>
-								<p class="desc">
-									 Discover IRA illustrations and use them in a commercial or non-commercial way to power up your projects.
-								</p>
-								<a href="/gallery/illustrations" class="btn btn-fill ">Gallery</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-					</div>
-				</div>
-			</div>
-	 </div>
 
 	 <div class="text-center section-sharing">
 		 <div class="container">
@@ -436,139 +398,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<script async defer src="https://buttons.github.io/buttons.js"></script>
 
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
-    <script type="text/javascript" src="{{ path-general }}/assets/js/svg-crowbar-export.js" id="script"></script>
-
-	<script type="text/javascript">
-
-	    $(document).ready(function(){
-				var svgs = $("svg");
-				for(var i = 0 ; i < svgs.length; i++){
-					$(svgs[i]).attr("width",$(svgs[i]).width());
-					$(svgs[i]).attr("height",$(svgs[i]).height());
-
-				}
-	        // the body of this function is in assets/js/now-ui-kit.js
-					$(function () {
-					  $('[data-toggle="tooltip"]').tooltip()
-					});
-
-					$('.dropdown-toggle').dropdown();
-
-
-
-	    });
-	</script>
-
-
-		<script>
-		function download_png (who) {
-		  var parent = $(who).parent();
-		  var newe = $(who).get(0).cloneNode(true);
-		  // this is the main thing that does the work
-		  var test = svg_crowbar(d3.select(who).node(), {
-		    filename: $(who).attr('id'),
-		    width: $(who).width(),
-		    height: $(who).height(),
-		    crowbar_el: d3.select("#crowbar-workspace").node(),
-		  })
-		  $(who).remove();
-		  parent.append(newe);
-		}
-		function saveSvg(svgEl, name) {
-		  applyStylesheets(svgEl)
-		  svgEl.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-		  var svgData = svgEl.outerHTML;
-		  var preface = '<?xml version="1.0" standalone="no"?>\r\n';
-		  var svgBlob = new Blob([preface, svgData], {type:"image/svg+xml;charset=utf-8"});
-		  var svgUrl = URL.createObjectURL(svgBlob);
-		  var downloadLink = document.createElement("a");
-		  downloadLink.href = svgUrl;
-		  downloadLink.download = name;
-		  document.body.appendChild(downloadLink);
-		  downloadLink.click();
-		  document.body.removeChild(downloadLink);
-		}
-
-		function download_svg(who){
-		  var parent = $(who).parent();
-		  var newe = $(who).get(0).cloneNode(true);
-		  saveSvg($(who).get(0),$(who).attr('id'));
-		  $(who).remove();
-		  parent.append(newe);
-		}
-
-		function applyStylesheets(svgEl) {
-
-		  // use an empty svg to compute the browser applied stylesheets
-		  var emptySvg = window.document.createElementNS("http://www.w3.org/2000/svg", 'svg');
-		  window.document.body.appendChild(emptySvg);
-		  var emptySvgDeclarationComputed = getComputedStyle(emptySvg);
-		  emptySvg.parentNode.removeChild(emptySvg);
-
-		  // traverse the element tree and explicitly set all stylesheet values
-		  // on an element. this is ripped from svg-crowbar
-		  var allElements = traverse(svgEl);
-		  var i = allElements.length;
-		  while (i--){
-		    explicitlySetStyle(allElements[i], emptySvgDeclarationComputed);
-		  }
-		}
-
-
-		function explicitlySetStyle (element, emptySvgDeclarationComputed) {
-		  var cSSStyleDeclarationComputed = getComputedStyle(element);
-		  var i, len, key, value;
-		  var computedStyleStr = "";
-		  for (i=0, len=cSSStyleDeclarationComputed.length; i<len; i++) {
-		    key=cSSStyleDeclarationComputed[i];
-		    value=cSSStyleDeclarationComputed.getPropertyValue(key);
-		    if (value!==emptySvgDeclarationComputed.getPropertyValue(key)) {
-		      computedStyleStr+=key+":"+value+";";
-		    }
-		  }
-		  element.setAttribute('style', computedStyleStr);
-		}
-
-
-		// traverse an svg and append all of the elements to the tree array. This
-		// ignores some elements that can appear in <svg> elements but whose
-		// children's styles should not be tweaked
-		function traverse(obj){
-		  var tree = [];
-		  var ignoreElements = {
-		    'script': undefined,
-		    'defs': undefined,
-		  };
-		  tree.push(obj);
-		  visit(obj);
-		  function visit(node) {
-		    if (node && node.hasChildNodes() && !(node.nodeName.toLowerCase() in ignoreElements)) {
-		      var child = node.firstChild;
-		      while (child) {
-		        if (child.nodeType === 1) {
-		          tree.push(child);
-		          visit(child);
-		        }
-		        child = child.nextSibling;
-		      }
-		    }
-		  }
-		  return tree;
-		}
-
-
-		$(window).scroll(function() {
-		var scroll = $(window).scrollTop();
-
-				if (scroll >= 300) {
-						$(".navbar").addClass("shadow-sm");
-				} else {
-						$(".navbar").removeClass("shadow-sm");
-				}
-		});
-
-		</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
+  <script type="text/javascript" src="{{ path-general }}/assets/js/svg-crowbar-export.js" id="script"></script>
+	<script type="text/javascript" src="{{ path-general }}/assets/js/bootstrap-notify.min.js" id="script"></script>
+	<script type="text/javascript" src="{{ path-general }}/assets/js/ira-design.js" id="script"></script>
 
 </html>

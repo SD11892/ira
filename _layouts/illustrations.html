@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+{% include path/path-assets.html %}
+<head>
+{% include head.html %}
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MBT68RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+{% if page.brand != 'illustrations-backgrounds' %}
+
+	<div class="change-colors fixed-plugin fas">
+		{% if page.brand != 'illustrations-objects' %}
+
+		<p class="text-clothes"><img src="{{ path-general }}/assets/img/leggins.svg">Trousers</p>
+		<div class="colors badge-colors-trousers">
+				<span class="badge filter badge-purple active" data-color="purple"></span>
+				<span class="badge filter badge-info" data-color="blue"></span>
+				<span class="badge filter badge-success" data-color="green"></span>
+				<span class="badge filter badge-warning" data-color="orange"></span>
+				<span class="badge filter badge-danger" data-color="red"></span>
+		</div>
+
+		<p class="text-clothes"><img src="{{ path-general }}/assets/img/tshirt.svg">T-shirt</p>
+		<div class="colors badge-colors-tshirt">
+				<span class="badge filter badge-purple active" data-color="purple"></span>
+				<span class="badge filter badge-info" data-color="blue"></span>
+				<span class="badge filter badge-success" data-color="green"></span>
+				<span class="badge filter badge-warning" data-color="orange"></span>
+				<span class="badge filter badge-danger" data-color="red"></span>
+		</div>
+
+		<p class="text-clothes"><img src="{{ path-general }}/assets/img/hair.svg">Hair</p>
+		<div class="colors badge-colors-hair">
+				<span class="badge filter badge-purple active" data-color="purple"></span>
+				<span class="badge filter badge-info" data-color="blue"></span>
+				<span class="badge filter badge-success" data-color="green"></span>
+				<span class="badge filter badge-warning" data-color="orange"></span>
+				<span class="badge filter badge-danger" data-color="red"></span>
+		</div>
+		{% endif %}
+
+		{% if page.brand == 'illustrations-objects' or page.brand == 'illustrations' %}
+		<p class="text-object"><img src="{{ path-general }}/assets/img/object.svg">Objects</p>
+		<div class="badge-colors-objects">
+				<span class="badge filter badge-purple active" data-color="purple"></span>
+				<span class="badge filter badge-info" data-color="blue"></span>
+				<span class="badge filter badge-success" data-color="green"></span>
+				<span class="badge filter badge-warning" data-color="orange"></span>
+				<span class="badge filter badge-danger" data-color="red"></span>
+		</div>
+		{% endif %}
+	</div>
+	{% endif %}
+
+	{% include navbar.html %}
+
+<div class="wrapper">
+
+{% if page.brand == 'illustrations' %}
+		<div class="section section-header">
+	     <div class="container">
+				 <div class="row">
+					 <div class="col-lg-5 text-sm-left text-center" style="z-index:2;">
+		            <h1 class="title">{{ page.title }}</h1>
+		          	<h4 class="desc">{{ page.description }}</h4>
+								<h6 class="category category-absolute rellax-text" data-rellax-speed="-2">
+                  <a href="https://www.creative-tim.com?ref=iradesign-header" target="_blank">
+                      <img src="{{ path-general }}/assets/img/creative-tim.png" class="creative-tim-logo">
+											Creative Tim
+                  </a>
+									product.
+									<a class="github-button" href="https://github.com/ira-design/ira-illustrations" data-icon="octicon-star" data-show-count="true" aria-label="Star ira-design on GitHub">Star</a>
+                </h6>
+
+								<div id="codefund" class="code-fund align-left"><!-- fallback content --></div>
+								<script src="https://app.codefund.io/properties/538/funder.js" async="async"></script>
+
+								<a href="https://dribbble.com/creativetim" class="btn btn-simple btn-dribbble btn-icon" target="_blank"><i class="fab fa-dribbble"></i></a>
+								<a href="https://twitter.com/CreativeTim" class="btn btn-simple btn-twitter btn-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a href="https://www.facebook.com/CreativeTim" class="btn btn-simple btn-facebook btn-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+								<a href="https://github.com/ira-design/ira-illustrations" class="btn btn-simple btn-github btn-icon" target="_blank"><i class="fab fa-github"></i></a>
+
+		        </div>
+						<div class="col-lg-7">
+
+								<img src="{{ path-general }}/assets/img/{{ page.img }}" class="header-image d-md-block d-none">
+
+
+						</div>
+
+					</div>
+				</div>
+     </div>
+
+		 {% else %}
+		 <div class="section">
+			<div class="container">
+			 <div class="row mt-5">
+				 <div class="col-lg-8 text-center m-auto" style="z-index:2;">
+						<h1 class="title mt-5">{{ page.title }}</h1>
+						<div id="codefund" class="code-fund align-center"><!-- fallback content --></div>
+						<script src="https://app.codefund.io/properties/538/funder.js" async="async"></script>
+						<a class="github-button position-relative" href="https://github.com/ira-design/ira-illustrations" data-icon="octicon-star" data-show-count="true" aria-label="Star ira-design on GitHub">Star</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+			{% endif %}
+
+
+
+		 {{ content }}
+
+
+	</div>
+
+		{% include sections/using-ira.html %}
+
+		{% include sections/give-it-chance.html %}
+
+	 <div class="text-center section-sharing">
+		 <div class="container">
+			 <div class="row">
+				 <div class="col-lg-8 m-auto text-center">
+ 						<h2 class="title" id="close-menu">Thank you for sharing!</h2>
+						<div class="space-50"></div>
+ 				</div>
+			</div>
+			<div class="row">
+				 <div class="col-lg-12">
+					 <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Firadesign.io%2F&amp;text=IRA%20Design%20by%20Creative%20Tim%3A%20Open-source%20illustrations%20that%20fits%20perfectly%20for%20any%20project%20you%20desire.%20%0A%23illustrations%20%23ux%20%23opensource%20%23design%20%23art%0A%0ACheck%20it%20out%20here%3A%20" class="btn btn-twitter " target="_blank">
+						 <i class="fab fa-twitter"></i> Twitter
+					 </a>
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.iradesign.io" class="btn btn-facebook " target="_blank">
+						 <i class="fab fa-facebook"></i> Facebook
+					 </a>
+				 </div>
+			 </div>
+			 <div class="space-180"></div>
+
+		 </div>
+	 </div>
+	 {% include footer.html %}
+
+<div id="crowbar-workspace">
+</div>
+</body>
+
+  <!--  jQuery and Bootstrap core files    -->
+  <!-- <script src="assets/js/jquery.js" type="text/javascript"></script> -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="{{ path-general }}/assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+
+	<script src="{{ path-general }}/assets/bootstrap-4/js/bootstrap.min.js" type="text/javascript"></script>
+
+
+    <!--  Get Shit Done Kit PRO Core javascript 	 -->
+	<script src="{{ path-general }}/assets/js/gsdk.js"></script>
+
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
+  <script type="text/javascript" src="{{ path-general }}/assets/js/svg-crowbar-export.js" id="script"></script>
+	<script type="text/javascript" src="{{ path-general }}/assets/js/bootstrap-notify.min.js" id="script"></script>
+	<script type="text/javascript" src="{{ path-general }}/assets/js/ira-design.js" id="script"></script>
+
+
+</html>
