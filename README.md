@@ -7,9 +7,9 @@ IRA Design helps you scale your final illustrations and bring them to life. Down
 
 ## Components:
 
-+ [11 characters](https://iradesign.io/#show-options)
-+ [16 objects](https://iradesign.io/#objects)
-+ [15 backgrounds](https://iradesign.io/#backgrounds)
++ [19 characters](https://iradesign.io/illustrations/characters)
++ [26 objects](https://iradesign.io/illustrations/objects)
++ [22 backgrounds](https://iradesign.io/illustrations/backgrounds)
 + [30 examples](https://iradesign.io/gallery/illustrations)
 
 ## Links:

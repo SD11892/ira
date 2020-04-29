@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 _layouts/test.html
 _includes/examples/old-svg
+.idea
