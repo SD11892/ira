@@ -1500,15 +1500,22 @@ body > .navbar-collapse .navbar-nav li a:hover{
 }
 
 .gradient-hair .stop1,
-.gradient-shirt .stop1,
-.gradient-object .stop1,
 .gradient-trousers .stop1{
+  stop-color: #4b45bd;
+}
+
+.gradient-shirt .stop1,
+.gradient-object .stop1{
   stop-color: #e5a4ed;
 }
+
 .gradient-hair .stop2,
-.gradient-shirt .stop2,
-.gradient-object .stop2,
 .gradient-trousers .stop2{
+  stop-color: #58caea;
+}
+
+.gradient-shirt .stop2,
+.gradient-object .stop2{
   stop-color: #7a5bf5;
 }
 
