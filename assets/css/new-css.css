@@ -272,7 +272,7 @@ a[rel="tooltip"]{
 .section-ready .calendar{
   width: 6%;
   position: absolute;
-  top: 56%;
+  top: 42%;
   right: 30%;
 }
 
@@ -280,7 +280,7 @@ a[rel="tooltip"]{
   width: 3%;
   position: absolute;
   right: 37%;
-  top: 55%;
+  top: 41%;
 }
 
 .section-ready .leaves{
@@ -448,11 +448,11 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .section-ready .calendar{
-    top: 59%;
+    top: 41%;
   }
 
   .section-ready .cup{
-    top: 57%;
+    top: 40%;
   }
 
   .illustration2,
@@ -513,11 +513,11 @@ body > .navbar-collapse .navbar-nav li a:hover{
     }
 
     .section-ready .cup {
-        top: 61%;
+        top: 40%;
     }
 
     .section-ready .calendar {
-        top: 62%;
+        top: 41%;
     }
 
     .section-ready .leaves{
