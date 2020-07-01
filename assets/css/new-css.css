@@ -1743,7 +1743,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 /*hover over illustration*/
 
-.hover-on{
+.hover-on .svg{
   transition: 0.4s ease;
   cursor: pointer;
 }
@@ -1754,9 +1754,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   padding: 0 20px;
 }
 
-.hover-on:hover{
+.hover-on:hover .svg{
   transform: scale(1.1);
 }
+
 
 .hover-on:hover .btn{
   opacity: 1;
@@ -1767,6 +1768,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  cursor: pointer;
 }
 
 .download-buttons .btn:hover,
