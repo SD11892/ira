@@ -1794,40 +1794,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
   display: none;
 }
 
-
-  .code-fund{
-    margin-top: 0px;
-    margin-bottom: 20px;
-    background: #fff;
-  }
-
-
-.code-fund{
-  z-index: 9999;
-
-}
-
-.code-fund .cf-wrapper{
-  background-color: #fff !important;
-}
-
-.code-fund span{
-  margin-top: 0;
-  margin-left: 0;
-  position: inherit;
-}
-
-.code-fund img{
-  width: auto !important;
-  margin-bottom: 0 !important;
-}
-
-@media(min-width:576px){
-  .code-fund.align-left #cf{
-    margin-left: 0 !important;
-  }
-}
-
 /*notifications*/
 .alert{
   background: #91a5f9;
@@ -1910,3 +1876,85 @@ body > .navbar-collapse .navbar-nav li a:hover{
 .st0{fill:#4B49BB;}
 .st5{opacity:7.000000e-02;enable-background:new    ;}
 .st6{fill:#FFFFFF;}
+
+/* carbon ads */
+
+#carbonads {
+  max-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#carbonads > span {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,.1);
+}
+
+ #carbonads > span {
+  margin-left: 0px;
+  margin-bottom: 35px;
+}
+
+#carbonads .carbon-wrap {
+  display: flex;
+  position: relative;
+}
+
+#carbonads .carbon-img {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+#carbonads .carbon-text {
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+ #carbonads .carbon-text {
+  color: #2d3748;
+}
+
+#carbonads .carbon-poweredby {
+  position: absolute;
+  bottom: 10px;
+  left: 156px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1;
+}
+
+#carbonads .carbon-poweredby {
+  color: #2d3748;
+}
+
+.m-auto #carbonads{
+  margin: auto;
+  margin-top: 15px;
+}
+
+.m-auto #carbonads .carbon-poweredby{
+  left: 143px;
+}
+
+@media (max-width: 576px){
+  #carbonads{
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  #carbonads .carbon-poweredby{
+    left: 143px;
+  }
+
+  .examples-page .section-header #carbonads img {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
