@@ -14,9 +14,15 @@ permalink: /illustrations/backgrounds
 ---
 
 
+
 <div class="section section-backgrounds" id="backgrounds">
    <div class="container">
-    <div class="row px-sm-5">
+     <form>
+       <div class="form-group w-50 m-auto">
+          <input type="text" id="searchInput" onkeyup="Function()" class="form-control" aria-label="Search" placeholder="Search objects">
+       </div>
+     </form>
+    <div class="row px-sm-5" id="elements">
       <div class="col-lg-4 col-12 my-sm-5 my-4 hover-on text-center">
         {% include backgrounds/background1.html %}
       </div>
