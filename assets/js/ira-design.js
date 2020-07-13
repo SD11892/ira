@@ -270,13 +270,11 @@ var scroll = $(window).scrollTop();
  input = document.getElementById("searchInput");
  filter = input.value.toUpperCase();
  ul = document.getElementById("elements");
- li = ul.getElementsByClassName("col-lg-4");
+ li = ul.getElementsByClassName("hover-on");
  li2 = ul.getElementsByClassName("jcorgFilterTextChild");
  for (i = 0; i < li.length; i++) {
        a = li2[i];
        txtValue = a.textContent || a.innerText;
-
-       console.log(txtValue);
 
        if (txtValue.toUpperCase().indexOf(filter) > -1) {
            li[i].style.display = "";
