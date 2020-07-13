@@ -16,10 +16,15 @@ permalink: /illustrations/characters
 
 <div class="section section-characters">
   <div class="container">
+    <form>
+      <div class="form-group w-50 m-auto">
+         <input type="text" id="searchInput" onkeyup="Function()" class="form-control" aria-label="Search" placeholder="Search characters">
+      </div>
+    </form>
     <div class="row">
      </div>
      <img src="{{ path-general }}/assets/img/character-bg.png" class="bg-ch">
-     <div class="row">
+     <div class="row pt-sm-5" id="elements">
        <div class="col-sm-4 col-6 text-center hover-on girl-hand-up">
          {% include characters/character1.html %}
        </div>
