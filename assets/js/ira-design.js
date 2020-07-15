@@ -263,3 +263,37 @@ var scroll = $(window).scrollTop();
       copyText.select();
       document.execCommand("Copy");
  }
+
+
+ function Function() {
+ var input, filter, ul, li, a, i, txtValue;
+ input = document.getElementById("searchInput");
+ filter = input.value.toUpperCase();
+ ul = document.getElementById("elements");
+ li = ul.getElementsByClassName("hover-on");
+ li2 = ul.getElementsByClassName("jcorgFilterTextChild");
+ for (i = 0; i < li.length; i++) {
+       a = li2[i];
+       txtValue = a.textContent || a.innerText;
+
+       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+           li[i].style.display = "";
+           // li[i].closest(".collapse").classList.add("show");
+       } else {
+           li[i].style.display = "none";
+       }
+   }
+ }
+
+ $(function() {
+   var $input = $('.form-group').find("#searchInput");
+   $input.jcOnPageFilter({
+     animateHideNShow: true,
+     focusOnLoad: false,
+     highlightColor: "#8ea3ff",
+     textColorForHighlights: "#000000",
+     caseSensitive: false,
+     hideNegatives: true,
+     childBlockClass: "jcorgFilterTextChild"
+   });
+ });
