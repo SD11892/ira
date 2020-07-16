@@ -263,3 +263,46 @@ var scroll = $(window).scrollTop();
       copyText.select();
       document.execCommand("Copy");
  }
+
+
+ function Function() {
+ var input, filter, ul, li, a, i, txtValue;
+ var count = 0;
+ input = document.getElementById("searchInput");
+ filter = input.value.toUpperCase();
+ ul = document.getElementById("elements");
+ li = ul.getElementsByClassName("hover-on");
+ li2 = ul.getElementsByClassName("jcorgFilterTextChild");
+ for (i = 0; i < li.length; i++) {
+       a = li2[i];
+       txtValue = a.textContent || a.innerText;
+
+       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+           li[i].style.display = "";
+       } else {
+           li[i].style.display = "none";
+           count ++;
+       }
+
+       if(count == li.length){
+         document.getElementById("no-result").classList.remove("d-none");
+         document.getElementById("no-result").classList.add("d-block");
+       } else {
+         document.getElementById("no-result").classList.add("d-none");
+         document.getElementById("no-result").classList.remove("d-block");
+       }
+   }
+ }
+
+ $(function() {
+   var $input = $('.form-group').find("#searchInput");
+   $input.jcOnPageFilter({
+     animateHideNShow: true,
+     focusOnLoad: false,
+     highlightColor: "#8ea3ff",
+     textColorForHighlights: "#000000",
+     caseSensitive: false,
+     hideNegatives: true,
+     childBlockClass: "jcorgFilterTextChild"
+   });
+ });

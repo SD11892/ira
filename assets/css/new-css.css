@@ -272,7 +272,7 @@ a[rel="tooltip"]{
 .section-ready .calendar{
   width: 6%;
   position: absolute;
-  top: 56%;
+  top: 42%;
   right: 30%;
 }
 
@@ -280,7 +280,7 @@ a[rel="tooltip"]{
   width: 3%;
   position: absolute;
   right: 37%;
-  top: 55%;
+  top: 41%;
 }
 
 .section-ready .leaves{
@@ -448,11 +448,11 @@ body > .navbar-collapse .navbar-nav li a:hover{
   }
 
   .section-ready .calendar{
-    top: 59%;
+    top: 41%;
   }
 
   .section-ready .cup{
-    top: 57%;
+    top: 40%;
   }
 
   .illustration2,
@@ -513,11 +513,11 @@ body > .navbar-collapse .navbar-nav li a:hover{
     }
 
     .section-ready .cup {
-        top: 61%;
+        top: 40%;
     }
 
     .section-ready .calendar {
-        top: 62%;
+        top: 41%;
     }
 
     .section-ready .leaves{
@@ -1500,15 +1500,22 @@ body > .navbar-collapse .navbar-nav li a:hover{
 }
 
 .gradient-hair .stop1,
-.gradient-shirt .stop1,
-.gradient-object .stop1,
 .gradient-trousers .stop1{
+  stop-color: #4b45bd;
+}
+
+.gradient-shirt .stop1,
+.gradient-object .stop1{
   stop-color: #e5a4ed;
 }
+
 .gradient-hair .stop2,
-.gradient-shirt .stop2,
-.gradient-object .stop2,
 .gradient-trousers .stop2{
+  stop-color: #58caea;
+}
+
+.gradient-shirt .stop2,
+.gradient-object .stop2{
   stop-color: #7a5bf5;
 }
 
@@ -1743,7 +1750,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 /*hover over illustration*/
 
-.hover-on{
+.hover-on .svg{
   transition: 0.4s ease;
   cursor: pointer;
 }
@@ -1754,9 +1761,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   padding: 0 20px;
 }
 
-.hover-on:hover{
+.hover-on:hover .svg{
   transform: scale(1.1);
 }
+
 
 .hover-on:hover .btn{
   opacity: 1;
@@ -1767,6 +1775,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+  cursor: pointer;
 }
 
 .download-buttons .btn:hover,
@@ -1792,40 +1801,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 #crowbar-workspace{
   display: none;
-}
-
-
-  .code-fund{
-    margin-top: 0px;
-    margin-bottom: 20px;
-    background: #fff;
-  }
-
-
-.code-fund{
-  z-index: 9999;
-
-}
-
-.code-fund .cf-wrapper{
-  background-color: #fff !important;
-}
-
-.code-fund span{
-  margin-top: 0;
-  margin-left: 0;
-  position: inherit;
-}
-
-.code-fund img{
-  width: auto !important;
-  margin-bottom: 0 !important;
-}
-
-@media(min-width:576px){
-  .code-fund.align-left #cf{
-    margin-left: 0 !important;
-  }
 }
 
 /*notifications*/
@@ -1910,3 +1885,85 @@ body > .navbar-collapse .navbar-nav li a:hover{
 .st0{fill:#4B49BB;}
 .st5{opacity:7.000000e-02;enable-background:new    ;}
 .st6{fill:#FFFFFF;}
+
+/* carbon ads */
+
+#carbonads {
+  max-width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#carbonads > span {
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,.1);
+}
+
+ #carbonads > span {
+  margin-left: 0px;
+  margin-bottom: 35px;
+}
+
+#carbonads .carbon-wrap {
+  display: flex;
+  position: relative;
+}
+
+#carbonads .carbon-img {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+#carbonads .carbon-text {
+  margin-bottom: 12px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+ #carbonads .carbon-text {
+  color: #2d3748;
+}
+
+#carbonads .carbon-poweredby {
+  position: absolute;
+  bottom: 10px;
+  left: 156px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1;
+}
+
+#carbonads .carbon-poweredby {
+  color: #2d3748;
+}
+
+.m-auto #carbonads{
+  margin: auto;
+  margin-top: 15px;
+}
+
+.m-auto #carbonads .carbon-poweredby{
+  left: 143px;
+}
+
+@media (max-width: 576px){
+  #carbonads{
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  #carbonads .carbon-poweredby{
+    left: 143px;
+  }
+
+  .examples-page .section-header #carbonads img {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
