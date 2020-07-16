@@ -267,6 +267,7 @@ var scroll = $(window).scrollTop();
 
  function Function() {
  var input, filter, ul, li, a, i, txtValue;
+ var count = 0;
  input = document.getElementById("searchInput");
  filter = input.value.toUpperCase();
  ul = document.getElementById("elements");
@@ -278,9 +279,17 @@ var scroll = $(window).scrollTop();
 
        if (txtValue.toUpperCase().indexOf(filter) > -1) {
            li[i].style.display = "";
-           // li[i].closest(".collapse").classList.add("show");
        } else {
            li[i].style.display = "none";
+           count ++;
+       }
+
+       if(count == li.length){
+         document.getElementById("no-result").classList.remove("d-none");
+         document.getElementById("no-result").classList.add("d-block");
+       } else {
+         document.getElementById("no-result").classList.add("d-none");
+         document.getElementById("no-result").classList.remove("d-block");
        }
    }
  }

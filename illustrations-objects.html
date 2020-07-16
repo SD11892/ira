@@ -16,10 +16,15 @@ permalink: /illustrations/objects
 
 <div class="section section-objects" id="objects">
   <img src="{{ path-general }}/assets/img/path2.png">
- <div class="container p-sm-0">
+ <div class="container p-sm-0" id="elements">
    <form>
      <div class="form-group w-50 m-auto">
         <input type="text" id="searchInput" onkeyup="Function()" class="form-control" aria-label="Search" placeholder="Search objects">
+        <p class="d-none text-center mt-3 desc" id="no-result">
+          <span class="text-lg"> 😞</span>
+          <br>
+          No results found
+        </p>
      </div>
    </form>
    <div class="row">
@@ -27,7 +32,7 @@ permalink: /illustrations/objects
           <div class="space-50 d-sm-block d-none"></div>
       </div>
     </div>
-    <div class="row" id="elements">
+    <div class="row">
       <div class="col-sm-3 col-6 text-center hover-on">
         {% include objects/object1.html %}
       </div>
