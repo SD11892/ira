@@ -524,8 +524,8 @@ body > .navbar-collapse .navbar-nav li a:hover{
         top:63%;
     }
 
-    .card-featured-content{
-      display: none;
+    .card-featured-content img{
+      margin: 0px 10px 40px !important;
     }
 
     .section-colors .change-colors{
