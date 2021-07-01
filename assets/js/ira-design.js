@@ -15,12 +15,18 @@ function download_png (who) {
   var parent = $(who).parent();
   var newe = $(who).get(0).cloneNode(true);
   // this is the main thing that does the work
+  var el = d3.select(who).node();
+  d3.select(who).node().setAttribute('width', $(who).width() + 500);
+  d3.select(who).node().setAttribute('height', $(who).height() + 500);
+
+  console.log(el);
   var test = svg_crowbar(d3.select(who).node(), {
     filename: $(who).attr('id'),
-    width: $(who).width(),
-    height: $(who).height(),
+    width: $(who).width()+500,
+    height: $(who).height()+500,
     crowbar_el: d3.select("#crowbar-workspace").node(),
   })
+  
   $(who).remove();
   parent.append(newe);
 
