@@ -26,7 +26,7 @@ function download_png (who) {
     height: $(who).height()+500,
     crowbar_el: d3.select("#crowbar-workspace").node(),
   })
-  
+
   $(who).remove();
   parent.append(newe);
 
@@ -312,3 +312,20 @@ var scroll = $(window).scrollTop();
      childBlockClass: "jcorgFilterTextChild"
    });
  });
+
+// Verify switch state for colored/outline illustration
+
+$('#switch-illustration').on('switch-change', function (e, data) {
+  var illOutline = document.querySelector(".illustration-outline");
+  var illColored = document.querySelector(".illustration-colored");
+
+    var $el = $(data.el)
+      , value = data.value;
+    if(value == true){
+      illOutline.classList.remove('d-none');
+      illColored.classList.add('d-none');
+    } else {
+      illOutline.classList.add('d-none');
+      illColored.classList.remove('d-none');
+    }
+});
