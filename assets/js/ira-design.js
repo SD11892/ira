@@ -301,16 +301,18 @@ var scroll = $(window).scrollTop();
  }
 
  $(function() {
+   if(document.querySelector("#searchInput")){
    var $input = $('.form-group').find("#searchInput");
-   $input.jcOnPageFilter({
-     animateHideNShow: true,
-     focusOnLoad: false,
-     highlightColor: "#8ea3ff",
-     textColorForHighlights: "#000000",
-     caseSensitive: false,
-     hideNegatives: true,
-     childBlockClass: "jcorgFilterTextChild"
-   });
+     $input.jcOnPageFilter({
+       animateHideNShow: true,
+       focusOnLoad: false,
+       highlightColor: "#8ea3ff",
+       textColorForHighlights: "#000000",
+       caseSensitive: false,
+       hideNegatives: true,
+       childBlockClass: "jcorgFilterTextChild"
+     });
+   }
  });
 
 // Verify switch state for colored/outline illustration
