@@ -944,6 +944,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
 }
 
 
+.illustration-outline,
+.illustration-colored{
+    transition: .5s ease;
+}
 .illustrations-outline{
   position: absolute;
   left: 0;
