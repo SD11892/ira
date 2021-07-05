@@ -1142,7 +1142,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   margin-bottom: 20px;
 }
 
-.section-header span{
+.section-header span:not(.switch-left):not(.switch-right){
   margin-top: 7px;
   position: absolute;
   margin-left: 15px;
@@ -1966,4 +1966,19 @@ body > .navbar-collapse .navbar-nav li a:hover{
     margin-bottom: 0;
     width: auto;
   }
+}
+
+/* Utilities */
+.z-index-2{
+  z-index: 2;
+}
+
+.z-index-100{
+  z-index: 100;
+}
+
+
+/* Switch color */
+input.ira-blue + span.switch-left, input.ira-blue + span + label + span.switch-right {
+    background-color: #7793ed;
 }
