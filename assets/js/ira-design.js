@@ -324,10 +324,10 @@ $('#switch-illustration').on('switch-change', function (e, data) {
     var $el = $(data.el)
       , value = data.value;
     if(value == true){
-      illOutline.classList.remove('d-none');
-      illColored.classList.add('d-none');
+      illOutline.classList.remove('opacity-0');
+      illColored.classList.add('opacity-0');
     } else {
-      illOutline.classList.add('d-none');
-      illColored.classList.remove('d-none');
+      illOutline.classList.add('opacity-0');
+      illColored.classList.remove('opacity-0');
     }
 });

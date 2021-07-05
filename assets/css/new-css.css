@@ -470,6 +470,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   .pig-float{
     display: none;
   }
+
 }
 
 @media (max-width:992px){
@@ -942,6 +943,16 @@ body > .navbar-collapse .navbar-nav li a:hover{
   z-index: 1;
 }
 
+
+.illustrations-outline{
+  position: absolute;
+  left: 0;
+  width: 130%;
+  margin-top: -3%;
+  left: -8%;
+  z-index: 1;
+}
+
 .bag{
   width: 7%;
   margin-top: 46%;
@@ -1404,7 +1415,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   margin-top: -14%;
   position: absolute;
   left: -16%;
-  animation: first 5s infinite;
+  /* animation: first 5s infinite; */
 }
 
 .women-float{
@@ -1413,7 +1424,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   z-index: 3;
   transform: translateY(65%);
   left: 30%;
-  animation: 5s second 1s infinite;
+  /* animation: 5s second 1s infinite; */
 }
 
 .coffee-float{
@@ -1422,7 +1433,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   position: absolute;
   transform: translateY(50%);
   z-index: 3;
-  animation: 6s third 0.7s infinite;
+  /* animation: 6s third 0.7s infinite; */
 
 }
 
@@ -1432,7 +1443,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   right: 4%;
   transform: translateY(30px);
   z-index: 2;
-  animation: 6s first 0.5s infinite;
+  /* animation: 6s first 0.5s infinite; */
 }
 
 @keyframes first {
@@ -1995,6 +2006,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .font-weight-bold{
   font-weight: 600;
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 /* Buttons */
