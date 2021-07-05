@@ -52,38 +52,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<div class="section section-header">
 	     <div class="container">
 				 <div class="row">
-					 <div class="col-lg-5 text-sm-left text-center" style="z-index:2;">
-		            <h1 class="title"> Build your own amazing illustrations</h1>
-		          	<h4 class="desc">Using our awesome gradients and hand drawn sketch components.</h4>
-								<h6 class="category category-absolute rellax-text" data-rellax-speed="-2">
-                  <a href="https://www.creative-tim.com?ref=iradesign-header" target="_blank">
-                      <img src="{{ path-general }}/assets/img/creative-tim.png" class="creative-tim-logo">
-											Creative Tim
-                  </a>
-									product.
-									<a class="github-button" href="https://github.com/ira-design/ira-illustrations" data-icon="octicon-star" data-show-count="true" aria-label="Star ira-design on GitHub">Star</a>
-                </h6>
-
+					 <div class="col-lg-6 text-sm-left text-center" style="z-index:2;">
+		            <h1 class="title text-dark font-weight-bold"> Build your own amazing illustrations</h1>
+		          	<h4 class="desc text-gray">Using our awesome gradients and hand drawn sketch components.</h4>
 
 <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7IPK3I&placement=iradesignio" id="_carbonads_js"></script>
 
-								<a href="https://dribbble.com/creativetim" class="btn btn-simple btn-dribbble btn-icon" target="_blank"><i class="fab fa-dribbble"></i></a>
-								<a href="https://twitter.com/CreativeTim" class="btn btn-simple btn-twitter btn-icon" target="_blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.facebook.com/CreativeTim" class="btn btn-simple btn-facebook btn-icon" target="_blank"><i class="fab fa-facebook"></i></a>
-								<a href="https://github.com/ira-design/ira-illustrations" class="btn btn-simple btn-github btn-icon" target="_blank"><i class="fab fa-github"></i></a>
+								<a href="https://dribbble.com/creativetim" class="btn btn-simple btn-dark px-2 btn-icon" target="_blank"><i class="fab fa-dribbble"></i></a>
+								<a href="https://twitter.com/CreativeTim" class="btn btn-simple btn-dark px-2 btn-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+								<a href="https://www.facebook.com/CreativeTim" class="btn btn-simple btn-dark px-2 btn-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+								<a href="https://github.com/ira-design/ira-illustrations" class="btn btn-simple btn-dark px-2 btn-icon" target="_blank"><i class="fab fa-github"></i></a>
 
 		        </div>
-						<div class="col-lg-7">
-							<img src="{{ path-general }}/assets/img/pp.png" class="illustration1">
+						<div class="col-lg-6 text-center">
+							<div class="d-flex position-relative z-index-100 mt-5">
+								<p class="ml-auto mb-0">Colored</p>
+								<div class="ml-3">
+									<div class="switch" id="switch-illustration"
+									  data-on-label="<i class='fa fa-tint-slash'></i>"
+									  data-off-label="<i class='fa fa-tint'></i>">
+									  <input type="checkbox" class="ira-blue"/>
+									</div>
+								</div>
+								<p class="mr-auto mb-0">Outline</p>
+							</div>
 
-								<img src="{{ path-general }}/assets/img/pr1.png" class="illustration2">
-								<img src="{{ path-general }}/assets/img/pr2.png" class="man-float">
-								<img src="{{ path-general }}/assets/img/women-float.png" class="women-float">
-								<img src="{{ path-general }}/assets/img/coffee-float.png" class="coffee-float">
-								<img src="{{ path-general }}/assets/img/pig-float.png" class="pig-float">
+							<div class="position-relative">
+								<div class="illustration-colored">
+									<img src="{{ path-general }}/assets/img/pp.png" class="illustration1">
+									<img src="{{ path-general }}/assets/img/pr1.png" class="illustration2">
+									<img src="{{ path-general }}/assets/img/pr2.png" class="man-float">
+									<img src="{{ path-general }}/assets/img/women-float.png" class="women-float">
+									<img src="{{ path-general }}/assets/img/coffee-float.png" class="coffee-float">
+									<img src="{{ path-general }}/assets/img/pig-float.png" class="pig-float">
+								</div>
 
-
-								<?xml version="1.0" encoding="utf-8"?>
+								<div class="illustration-outline d-none">
+									<img src="{{ path-general }}/assets/img/img-header-outline.jpg" class="illustration2 illustrations-outline">
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -1807,16 +1814,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!--  jQuery and Bootstrap core files    -->
   <!-- <script src="assets/js/jquery.js" type="text/javascript"></script> -->
-	<script
+	<!-- <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
+
+	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
 
 	<script src="assets/bootstrap-4/js/bootstrap.min.js" type="text/javascript"></script>
 
-
-    <!--  Get Shit Done Kit PRO Core javascript 	 -->
+	<script src="{{ path-general }}/assets/js/gsdk-bootstrapswitch.js"></script>
+  <!--  Get Shit Done Kit PRO Core javascript 	 -->
 	<script src="assets/js/gsdk.js"></script>
 
 	<script async defer src="https://buttons.github.io/buttons.js"></script>

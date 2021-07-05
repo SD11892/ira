@@ -101,6 +101,14 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   opacity: 1;
 }
 
+.btn.btn-simple{
+  box-shadow: none;
+}
+
+.btn.btn-simple:hover{
+  box-shadow: none;
+}
+
 a:not([href]):not([tabindex]){
   color: #6772e5;
 }
@@ -1977,6 +1985,43 @@ body > .navbar-collapse .navbar-nav li a:hover{
   z-index: 100;
 }
 
+.text-dark{
+  color: #303e61;
+}
+
+.text-gray{
+  color: #596580;
+}
+
+.font-weight-bold{
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-dark:not(.btn-simple){
+  background: #303e61;
+  border-color: #303e61;
+}
+
+.btn-dark:not(.btn-simple):active,
+.btn-dark:not(.btn-simple):hover,
+.btn-dark:not(.btn-simple):focus{
+  background: #303e61 !important;
+  border-color: #303e61 !important;
+}
+
+.btn-simple.btn-dark{
+  color: #303e61;
+}
+
+.btn-simple.btn-dark,
+.btn-simple.btn-dark:active,
+.btn-simple.btn-dark:focus
+{
+  background: transparent !important;
+  color: #303e61 !important;
+  box-shadow: none !important;
+}
 
 /* Switch color */
 input.ira-blue + span.switch-left, input.ira-blue + span + label + span.switch-right {
