@@ -10,24 +10,30 @@
    <div class="collapse navbar-collapse" id="navigation-default">
      <ul class="navbar-nav ml-auto align-items-center">
        <a class="btn btn-simple btn-dark w-100 px-lg-3 px-2 pt-1 mt-2" href="/gallery/illustrations">
-         <i class="fa fa-box mr-1"></i>
+         <i class="fa fa-box opacity-7 mr-1"></i>
          Gallery
        </a>
 
        <li>
          <div class="dropdown">
            <button class="btn btn-simple btn-dark w-100 dropdown-toggle px-lg-3 px-2" type="button" id="dropdownIllustrations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <i class="fa fa-box mr-1"></i>Illustrations <span class="caret"></span>
+             <i class="fa fa-palette opacity-7 mr-1"></i>Illustrations <span class="caret"></span>
            </button>
            <div class="dropdown-menu pr-2 pl-0 pb-0" aria-labelledby="dropdownIllustrations">
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations">All illustrations</a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/backgrounds">Backgrounds</a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/objects">Objects</a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/objects"><span class="ml-3">Color</span></a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/outline/objects"><span class="ml-3">Outline</span></a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/characters">Characters</a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/characters"><span class="ml-3">Color</span></a>
-             <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/outline/characters"><span class="ml-3">Outline</span></a>
+             <a class="dropdown-item py-1 pl-2 text-uppercase d-flex align-items-center" href="{{ path-general }}/illustrations">
+               <img src="{{ path-general }}/assets/img/pen-gradient.png" class="w-15 mr-1">
+               <span class="opacity-6">Gradient</span>
+             </a>
+              <a class="dropdown-item py-1" href="{{ path-general }}/illustrations/characters">Characters</a>
+              <a class="dropdown-item py-1" href="{{ path-general }}/illustrations/objects">Objects</a>
+              <a class="dropdown-item py-2" href="{{ path-general }}/illustrations/backgrounds">Backgrounds</a>
+             <a class="dropdown-item py-1" href="{{ path-general }}/illustrations">All illustrations</a>
+             <a class="dropdown-item py-1 pl-2 text-uppercase d-flex align-items-center mt-3" href="{{ path-general }}/illustrations">
+               <img src="{{ path-general }}/assets/img/pen-outline.png" class="w-15 mr-1">
+               <span class="opacity-6">Outline</span>
+             </a>
+             <a class="dropdown-item py-1" href="{{ path-general }}/illustrations/outline/characters">Characters</a>
+             <a class="dropdown-item py-1 mb-3" href="{{ path-general }}/illustrations/outline/objects">Objects</a>
            </div>
          </div>
        </li>
