@@ -208,10 +208,12 @@ a[rel="tooltip"]{
 .navbar .dropdown-menu > a{
   margin: 5px;
   border-radius: 6px;
+  padding-left: 34px;
 }
 
 .navbar .dropdown-menu{
   margin-right: 35px;
+  box-shadow: 0 8px 26px -4px rgb(0 0 0 / 15%), 0 8px 9px -5px rgb(0 0 0 / 6%);
 }
 
 .navbar .dropdown-menu > a:hover,
@@ -2024,12 +2026,21 @@ body > .navbar-collapse .navbar-nav li a:hover{
   opacity: .7;
 }
 
+.opacity-10{
+  opacity: 1;
+}
+
+
 .w-20{
   width: 20%;
 }
 
 .w-15{
   width: 15%;
+}
+
+.text-sm{
+  font-size: .9rem;
 }
 
 /* Buttons */
