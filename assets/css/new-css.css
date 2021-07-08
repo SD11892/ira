@@ -1028,7 +1028,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
 .info img{
   width: 80%;
   border-radius: 10px;
-  border: 1px solid #7d99ed;
+  border: 1px solid rgba(52, 58, 64, .3);
 }
 
 .card-contact .info .icon{
@@ -1724,7 +1724,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   top: 20%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  border: 2px solid #7793ec;
+  border: 2px solid #303e61;
   padding: 20px;
   padding-top: 0;
   transition: 0.4s ease;
@@ -1747,7 +1747,7 @@ body > .navbar-collapse .navbar-nav li a:hover{
   width: 50px;
   right: 100%;
   top: 10%;
-  background: #7b95e5;
+  background: #303e61;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   cursor: pointer;
@@ -2073,6 +2073,16 @@ body > .navbar-collapse .navbar-nav li a:hover{
   background: transparent !important;
   color: #303e61 !important;
   box-shadow: none !important;
+}
+
+.btn-outline-dark{
+  border-color: #303e61;
+  color: #303e61;
+}
+
+.btn-outline-dark:hover{
+  border-color: #303e61;
+  color: #303e61;
 }
 
 /* Switch color */
