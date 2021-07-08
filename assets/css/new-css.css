@@ -954,8 +954,6 @@ body > .navbar-collapse .navbar-nav li a:hover{
   position: absolute;
   left: 0;
   width: 130%;
-  margin-top: -3%;
-  left: -8%;
   z-index: 1;
 }
 
@@ -2037,6 +2035,14 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .w-15{
   width: 15%;
+}
+
+.h-80{
+  height: 80%;
+}
+
+.w-130{
+  width: 130%;
 }
 
 .text-sm{
