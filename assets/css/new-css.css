@@ -2080,7 +2080,8 @@ body > .navbar-collapse .navbar-nav li a:hover{
   color: #303e61;
 }
 
-.btn-outline-dark:hover{
+.btn-outline-dark:hover,
+.btn-outline-dark:focus{
   border-color: #303e61;
   color: #303e61;
 }
