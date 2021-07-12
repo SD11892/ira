@@ -1,6 +1,18 @@
-<nav class="navbar navbar-expand-md navbar-default py-1" role="navigation-demo">
+<nav class="navbar navbar-expand-md navbar-default py-2" role="navigation-demo">
   <div class="container">
-   <a class="navbar-brand pl-0 my-0 py-0" href="{{ path-general }}/"><img src="{{ path-general }}/assets/img/ira-logo.png"style="width:40%;"/></a>
+   <div class="navbar-brand pl-0 my-0 py-0 d-flex">
+     <a href="{{ path-general }}" style="width:15%;">
+       <img src="{{ path-general }}/assets/img/ira-logo-pen.png" class="w-100"/>
+     </a>
+     <div class="d-flex flex-column">
+       <a href="{{ path-general }}" class="text-ira text-lg">
+         Ira Design
+       </a>
+       <a href="https://www.creative-tim.com/" target="_blank" class="text-dark text-sm">
+         <span>by Creative Tim</span>
+       </a>
+      </div>
+   </div>
    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation-default">
        <span class="sr-only">Toggle navigation</span>
        <span class="icon-bar"></span>

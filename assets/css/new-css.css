@@ -255,6 +255,9 @@ a[rel="tooltip"]{
   background: #91a5f8;
 }
 
+.navbar .navbar-brand{
+  text-transform: none;
+}
 
 #girl_laptop{
   width:50%;
@@ -2004,6 +2007,13 @@ body > .navbar-collapse .navbar-nav li a:hover{
   color: #303e61;
 }
 
+.text-ira,
+.text-ira:hover,
+.text-ira:focus,
+.text-ira:active{
+  color: #7c96ed;
+}
+
 .text-gray{
   color: #596580;
 }
@@ -2047,6 +2057,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
 
 .text-sm{
   font-size: .9rem;
+}
+
+.text-lg{
+  font-size: 1.5rem;
 }
 
 /* Buttons */
