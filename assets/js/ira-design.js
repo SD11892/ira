@@ -15,12 +15,18 @@ function download_png (who) {
   var parent = $(who).parent();
   var newe = $(who).get(0).cloneNode(true);
   // this is the main thing that does the work
+  var el = d3.select(who).node();
+  d3.select(who).node().setAttribute('width', $(who).width() + 500);
+  d3.select(who).node().setAttribute('height', $(who).height() + 500);
+
+  console.log(el);
   var test = svg_crowbar(d3.select(who).node(), {
     filename: $(who).attr('id'),
-    width: $(who).width(),
-    height: $(who).height(),
+    width: $(who).width()+500,
+    height: $(who).height()+500,
     crowbar_el: d3.select("#crowbar-workspace").node(),
   })
+
   $(who).remove();
   parent.append(newe);
 
@@ -295,14 +301,33 @@ var scroll = $(window).scrollTop();
  }
 
  $(function() {
+   if(document.querySelector("#searchInput")){
    var $input = $('.form-group').find("#searchInput");
-   $input.jcOnPageFilter({
-     animateHideNShow: true,
-     focusOnLoad: false,
-     highlightColor: "#8ea3ff",
-     textColorForHighlights: "#000000",
-     caseSensitive: false,
-     hideNegatives: true,
-     childBlockClass: "jcorgFilterTextChild"
-   });
+     $input.jcOnPageFilter({
+       animateHideNShow: true,
+       focusOnLoad: false,
+       highlightColor: "#8ea3ff",
+       textColorForHighlights: "#000000",
+       caseSensitive: false,
+       hideNegatives: true,
+       childBlockClass: "jcorgFilterTextChild"
+     });
+   }
  });
+
+// Verify switch state for colored/outline illustration
+
+$('#switch-illustration').on('switch-change', function (e, data) {
+  var illOutline = document.querySelector(".illustration-outline");
+  var illColored = document.querySelector(".illustration-colored");
+
+    var $el = $(data.el)
+      , value = data.value;
+    if(value == true){
+      illOutline.classList.remove('opacity-0');
+      illColored.classList.add('opacity-0');
+    } else {
+      illOutline.classList.add('opacity-0');
+      illColored.classList.remove('opacity-0');
+    }
+});

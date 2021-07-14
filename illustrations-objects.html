@@ -13,6 +13,7 @@ og_url: https://iradesign.io/illustrations/objects
 permalink: /illustrations/objects
 ---
 
+{% include path/path-assets.html %}
 
 <div class="section section-objects" id="objects">
   <img src="{{ path-general }}/assets/img/path2.png">
@@ -20,7 +21,7 @@ permalink: /illustrations/objects
    <form>
      <div class="form-group w-50 m-auto">
         <input type="text" id="searchInput" onkeyup="Function()" class="form-control" aria-label="Search" placeholder="Search objects">
-        <p class="d-none text-center mt-3 desc" id="no-result">
+        <p class="d-none text-center text-dark mt-3 desc" id="no-result">
           <span class="text-lg"> 😞</span>
           <br>
           No results found
