@@ -7,6 +7,11 @@ var fixedTop = false;
 var navbar_initialized = false;
 
 $(document).ready(function(){
+    /*      Activate the switches with icons      */
+    if(document.querySelector('.switch')){
+      $('.switch')['bootstrapSwitch']();
+    }
+
     window_width = $(window).width();
 
     burger_menu = $('nav[role="navigation"]').hasClass('navbar-burger') ? true : false;
