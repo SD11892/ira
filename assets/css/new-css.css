@@ -202,7 +202,7 @@ a[rel="tooltip"]{
 
 .navbar .btn{
   margin-top: 13px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .navbar .dropdown-menu > a{
@@ -1501,6 +1501,10 @@ body > .navbar-collapse .navbar-nav li a:hover{
   border-radius: 50%;
   width: 15px;
   height: 15px;
+}
+
+.badge.badge-sm{
+  font-size: 60%;
 }
 
 .badge.badge-dot.badge-top-right{
